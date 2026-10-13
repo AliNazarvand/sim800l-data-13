@@ -1,12 +1,15 @@
 # dat_07 Report - Hardware Reference
 
 - **Records**: 77
-- **Validation errors**: 1
-- **Status**: partial
+- **Complete**: 0
+- **Partial**: 77
+- **Blocked**: 0
+- **Validation errors**: 0
+- **Dataset status**: partial
 - **Coverage**: —
 - **Coverage estimate**: medium
 - **Source**: SIM800H&SIM800L Hardware Design V2.02
-- **Last update**: 2026-10-13T19:11:56Z
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why partial
 

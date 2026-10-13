@@ -1,12 +1,15 @@
 # dat_06 Report - Init Sequence
 
 - **Records**: 35
-- **Validation errors**: 1
-- **Status**: partial
+- **Complete**: 0
+- **Partial**: 25
+- **Blocked**: 0
+- **Validation errors**: 0
+- **Dataset status**: partial
 - **Coverage**: —
 - **Coverage estimate**: medium
 - **Source**: SIM800 Series AT Command Manual V1.01
-- **Last update**: 2026-10-13T19:11:56Z
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why partial
 

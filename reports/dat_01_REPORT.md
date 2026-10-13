@@ -1,16 +1,19 @@
 # dat_01 Report - AT Command
 
 - **Records**: 340
+- **Complete**: 0
+- **Partial**: 340
+- **Blocked**: 0
 - **Validation errors**: 0
-- **Status**: complete
-- **Coverage**: 101.5%
+- **Dataset status**: complete
+- **Coverage**: 100.0%
 - **Coverage estimate**: high
 - **Source**: SIM800 Series AT Command Manual V1.01
-- **Last update**: 2026-10-13T19:11:56Z
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why complete
 
-—
+All AT commands from SIM800 Series AT Command Manual V1.01 covered (>= 95%).
 
 ## Notes
 

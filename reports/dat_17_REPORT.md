@@ -1,12 +1,15 @@
 # dat_17 Report - Certificate/Key Store
 
 - **Records**: 9
+- **Complete**: 0
+- **Partial**: 0
+- **Blocked**: 9
 - **Validation errors**: 0
-- **Status**: partial
+- **Dataset status**: partial
 - **Coverage**: —
 - **Coverage estimate**: low
 - **Source**: SIM800 Series SSL AT Command Manual V1.01
-- **Last update**: 2026-10-13T19:11:56Z
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why partial
 

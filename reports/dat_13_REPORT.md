@@ -1,12 +1,15 @@
 # dat_13 Report - SIM Management
 
 - **Records**: 10
+- **Complete**: 0
+- **Partial**: 10
+- **Blocked**: 0
 - **Validation errors**: 0
-- **Status**: partial
+- **Dataset status**: partial
 - **Coverage**: —
 - **Coverage estimate**: low
 - **Source**: SIM800 Series AT Command Manual V1.01
-- **Last update**: 2026-10-13T19:11:56Z
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why partial
 

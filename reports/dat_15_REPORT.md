@@ -1,12 +1,15 @@
 # dat_15 Report - Power Management
 
 - **Records**: 351
+- **Complete**: 1
+- **Partial**: 350
+- **Blocked**: 0
 - **Validation errors**: 0
-- **Status**: partial
+- **Dataset status**: partial
 - **Coverage**: —
 - **Coverage estimate**: high
 - **Source**: SIM800H&SIM800L Hardware Design V2.02
-- **Last update**: 2026-10-13T19:11:56Z
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why partial
 

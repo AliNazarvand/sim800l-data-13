@@ -1,12 +1,15 @@
 # dat_14 Report - Operator/APN
 
 - **Records**: 52
-- **Validation errors**: 1
-- **Status**: partial
+- **Complete**: 0
+- **Partial**: 52
+- **Blocked**: 0
+- **Validation errors**: 0
+- **Dataset status**: partial
 - **Coverage**: —
 - **Coverage estimate**: medium
-- **Source**: —
-- **Last update**: 2026-10-13T19:11:56Z
+- **Source**: mcc-mnc.com (external)
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why partial
 

@@ -1,12 +1,15 @@
 # dat_08 Report - Firmware Compatibility
 
 - **Records**: 1
+- **Complete**: 0
+- **Partial**: 0
+- **Blocked**: 1
 - **Validation errors**: 0
-- **Status**: blocked
+- **Dataset status**: blocked
 - **Coverage**: —
 - **Coverage estimate**: low
 - **Source**: (source unavailable)
-- **Last update**: 2026-10-13T19:11:56Z
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why blocked
 

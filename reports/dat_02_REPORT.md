@@ -1,12 +1,15 @@
 # dat_02 Report - URC
 
 - **Records**: 18
-- **Validation errors**: 1
-- **Status**: partial
+- **Complete**: 0
+- **Partial**: 18
+- **Blocked**: 0
+- **Validation errors**: 0
+- **Dataset status**: partial
 - **Coverage**: —
 - **Coverage estimate**: low
 - **Source**: SIM800 Series AT Command Manual V1.01
-- **Last update**: 2026-10-13T19:11:56Z
+- **Last update**: 2026-10-13T19:15:43Z
 
 ## Why partial
 

@@ -766,3 +766,11 @@ now has:
 - fix_validate_errors.py: R5 clamped, SIM800H-only fixed, R12 downgraded.
 - validate exit: 0
 - Final: records=1369 errors=0 pending_blocked=35 format_mismatch=129 real_missing=0
+
+## 2026-10-13T19:15:43Z — Final Report Sync
+
+- coverage_report.py rewritten (cap 100%, dat_14 source, per-status counts).
+- All 18 dat_XX_REPORT.md regenerated with current data.
+- _FINAL_STATUS.md and COVERAGE_MATRIX.md refreshed.
+- CHANGELOG.md bumped to 0.9.2.
+- Totals: records=1369 errors=0 pending_blocked=35 format_mismatch=129 real_missing=0.

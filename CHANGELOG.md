@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.9.2] - 2026-10-13T19:15:43Z
+
+### Fixed
+- coverage_report.py: coverage capped at 100% (dat_01 ratio overflow).
+- dat_14 source now correctly reported as "mcc-mnc.com (external)".
+- Per-dataset reports now show record status breakdown (complete/partial/blocked).
+- All stale dat_XX_REPORT.md regenerated after R12 downgrade.
+
+### Changed
+- Coverage matrix columns updated to include per-status counts.
+
 ## [0.9.1] - 2026-10-13T19:13:23Z
 
 ### Fixed
