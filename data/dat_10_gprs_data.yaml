@@ -9,7 +9,7 @@
     quote: 7.2.2 AT+CGDCONT  Define PDP Context .......................................................................171
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -71,7 +71,7 @@
     quote: 7.2.1 AT+CGATT  Attach or Detach from GPRS Service ..................................................170
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -106,7 +106,7 @@
     quote: 7.2.5 AT+CGACT  PDP Context Activate or Deactivate ....................................................175
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -180,7 +180,7 @@
     quote: 7.2.7 AT+CGPADDR  Show PDP Address .........................................................................176
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -224,7 +224,7 @@
     quote: 8.2.9 AT+CSTT  Start Task and Set APN, USER NAME, PASSWORD ...........................189
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -259,7 +259,7 @@
     quote: 8.2.10 AT+CIICR  Bring Up Wireless Connection with GPRS or CSD .............................190
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -288,7 +288,7 @@
     quote: 8.2.11 AT+CIFSR  Get Local IP Address ............................................................................190
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -317,7 +317,7 @@
     quote: 8.2.2 AT+CIPSTART  Start Up TCP or UDP Connection...................................................182
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -361,7 +361,7 @@
     quote: 8.2.3 AT+CIPSEND  Send Data Through TCP or UDP Connection ...................................184
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -402,7 +402,7 @@
     quote: 8.2.6 AT+CIPCLOSE  Close TCP or UDP Connection .....................................................187
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -437,7 +437,7 @@
     quote: 8.2.7 AT+CIPSHUT  Deactivate GPRS PDP Context ........................................................188
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -466,7 +466,7 @@
     quote: 8.2.12 AT+CIPSTATUS  Query Current Connection Status ...............................................191
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -507,7 +507,7 @@
     quote: 8.2.26 AT+CIPRXGET  Get Data from Network Manually ...............................................202
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -557,7 +557,7 @@
     quote: 8.2.1 AT+CIPMUX  Start Up Multi-IP Connection ............................................................182
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -589,7 +589,7 @@
     quote: 8.2.4 AT+CIPQSEND  Select Data Transmitting Mode .....................................................186
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -654,7 +654,7 @@
     quote: 8.2.22 AT+CIPMODE  Select TCPIP Application Mode ....................................................198
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -707,7 +707,7 @@
     quote: 8.2.23 AT+CIPCCFG Modify write cmd parameters
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -736,7 +736,7 @@
     quote: 3.2.35 AT+CSQ  Signal Quality Report ................................................................................82
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -774,7 +774,7 @@
     quote: 3.2.32 AT+CREG  Network Registration ..............................................................................79
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -818,7 +818,7 @@
     quote: 7.2.10 AT+CGREG  Network Registration Status ..............................................................178
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []
@@ -892,7 +892,7 @@
     quote: 8.2.14 AT+CDNSGIP  Query the IP Address of Given Domain Name ...............................193
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual GPRS limit (17/24)'
   tags: []

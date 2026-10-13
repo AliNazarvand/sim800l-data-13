@@ -8,7 +8,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -47,7 +47,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -86,7 +86,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -125,7 +125,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -164,7 +164,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -203,7 +203,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -242,7 +242,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -281,7 +281,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -320,7 +320,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -359,7 +359,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -398,7 +398,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -437,7 +437,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -476,7 +476,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -515,7 +515,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -554,7 +554,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -593,7 +593,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -632,7 +632,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -671,7 +671,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -710,7 +710,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -749,7 +749,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -788,7 +788,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -827,7 +827,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -866,7 +866,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -905,7 +905,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -944,7 +944,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -983,7 +983,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1022,7 +1022,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1061,7 +1061,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1100,7 +1100,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1139,7 +1139,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1178,7 +1178,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1217,7 +1217,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1256,7 +1256,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1295,7 +1295,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1334,7 +1334,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1373,7 +1373,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1412,7 +1412,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1451,7 +1451,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1490,7 +1490,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1529,7 +1529,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1568,7 +1568,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1607,7 +1607,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1646,7 +1646,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1685,7 +1685,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1724,7 +1724,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1763,7 +1763,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1802,7 +1802,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1841,7 +1841,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1880,7 +1880,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1919,7 +1919,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1958,7 +1958,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;
@@ -1997,7 +1997,7 @@
     date: '2024-01-01'
   source_type: external
   confidence: 0.6
-  status: complete
+  status: partial
   conflicts: []
   notes: 'external reference; برای کامل شدن نیاز به تطبیق دقیق با mcc-mnc.com | limit_reason:
     External source only (52/52); external source (mcc-mnc.com); R6 external source;

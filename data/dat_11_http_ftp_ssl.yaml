@@ -9,7 +9,7 @@
     quote: 11.2.1 AT+HTTPINIT  Initialize HTTP Service .................................................................212
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -37,7 +37,7 @@
     quote: 11.2.2 AT+HTTPTERM  Terminate HTTP Service ............................................................212
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -65,7 +65,7 @@
     quote: 11.2.3 AT+HTTPPARA  Set HTTP Parameters Value ........................................................213
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -99,7 +99,7 @@
     quote: 11.2.4 AT+HTTPDATA  Input HTTP Data .........................................................................214
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -130,7 +130,7 @@
     quote: 11.2.5 AT+HTTPACTION  HTTP Method Action .............................................................215
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -161,7 +161,7 @@
     quote: 11.2.6 AT+HTTPREAD  Read the HTTP Server Response ................................................217
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -224,7 +224,7 @@
     quote: 11.2.8 AT+HTTPSTATUS  Read HTTP Status ...................................................................219
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -364,7 +364,7 @@
     quote: 12.2.15 AT+FTPPUT  Set Upload File ...............................................................................229
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -392,7 +392,7 @@
     quote: 12.2.14 AT+FTPGET  Download File ................................................................................228
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -420,7 +420,7 @@
     quote: 12.2.17 AT+FTPDELE  Delete Sp ecified File in FTP Server.............................................231
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -448,7 +448,7 @@
     quote: 12.2.21 AT+FTPMKD  Make Directory on the Remote Machine ......................................233
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -476,7 +476,7 @@
     quote: 12.2.22 AT+FTPRMD  Remove Directory on the Remote Machine ..................................234
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -504,7 +504,7 @@
     quote: 12.2.23 AT+FTPLIST  List Contents of Directory on the Remote Machine.......................234
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -671,7 +671,7 @@
     quote: 12.2.3 AT+FTPTYPE  Set the Type of Data to Be Transferred ...........................................222
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -702,7 +702,7 @@
     quote: 12.2.2 AT+FTPMODE  Set Active or Passive FTP Mode ..................................................221
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -732,7 +732,7 @@
     quote: 12.2.4 AT+FTPPUTOPT  Set FTP Put Type .......................................................................222
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -762,7 +762,7 @@
     quote: 12.2.11 AT+FTPGETPATH  Set Download File Path .........................................................226
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -792,7 +792,7 @@
     quote: 12.2.13 AT+FTPPUTPATH  Set Upload File Path ..............................................................227
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []
@@ -822,7 +822,7 @@
     quote: 12.2.1 AT+FTPPORT  Set FTP Control Port ......................................................................220
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: Specialist source limit (25/38)'
   tags: []

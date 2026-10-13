@@ -13,12 +13,10 @@
       "dataset": "dat_02",
       "file": "dat_02_urc.yaml",
       "records": 18,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 16,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_03",
@@ -33,45 +31,37 @@
       "dataset": "dat_04",
       "file": "dat_04_timing_timeout.yaml",
       "records": 99,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 87,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_05",
       "file": "dat_05_state_machine.yaml",
       "records": 31,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 8,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_06",
       "file": "dat_06_init_sequence.yaml",
       "records": 35,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 7,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_07",
       "file": "dat_07_hardware_reference.yaml",
       "records": 77,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 77,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_08",
@@ -95,34 +85,28 @@
       "dataset": "dat_10",
       "file": "dat_10_gprs_data.yaml",
       "records": 24,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 21,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_11",
       "file": "dat_11_http_ftp_ssl.yaml",
       "records": 38,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 19,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_12",
       "file": "dat_12_audio.yaml",
       "records": 13,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 8,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_13",
@@ -137,12 +121,10 @@
       "dataset": "dat_14",
       "file": "dat_14_operator_apn.yaml",
       "records": 52,
-      "errors": [
-        "[dataset] R12: contains complete records but coverage is None and estimate != high"
-      ],
+      "errors": [],
       "warnings": [],
-      "complete_records": 52,
-      "schema_ok": false
+      "complete_records": 0,
+      "schema_ok": true
     },
     {
       "dataset": "dat_15",
@@ -181,7 +163,7 @@
       "schema_ok": true
     }
   ],
-  "total_errors": 9,
+  "total_errors": 0,
   "total_records": 1369,
   "jsonschema": true
 }

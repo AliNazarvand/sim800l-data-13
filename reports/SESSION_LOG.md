@@ -760,3 +760,9 @@ now has:
 - CHANGELOG.md bumped to 0.9.0.
 - Final: records=1369 errors=9 pending_blocked=35
   format_mismatch=129 real_missing=0
+
+## 2026-10-13T19:13:23Z — Fix 9 Validation Errors
+
+- fix_validate_errors.py: R5 clamped, SIM800H-only fixed, R12 downgraded.
+- validate exit: 0
+- Final: records=1369 errors=0 pending_blocked=35 format_mismatch=129 real_missing=0

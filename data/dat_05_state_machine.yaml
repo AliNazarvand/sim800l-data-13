@@ -1050,7 +1050,7 @@
     quote: ''
   source_type: primary
   confidence: 0.92
-  status: complete
+  status: partial
   conflicts: []
   notes: State documented in V2.02 Table 4.
   applicable_models:
@@ -1080,7 +1080,7 @@
     quote: ''
   source_type: primary
   confidence: 0.92
-  status: complete
+  status: partial
   conflicts: []
   notes: State documented in V2.02 Table 4.
   applicable_models:
@@ -1111,7 +1111,7 @@
     quote: ''
   source_type: primary
   confidence: 0.92
-  status: complete
+  status: partial
   conflicts: []
   notes: State documented in V2.02 Table 4.
   applicable_models:
@@ -1141,7 +1141,7 @@
     quote: ''
   source_type: primary
   confidence: 0.92
-  status: complete
+  status: partial
   conflicts: []
   notes: State documented in V2.02 Table 4.
   applicable_models:
@@ -1171,7 +1171,7 @@
     quote: ''
   source_type: primary
   confidence: 0.92
-  status: complete
+  status: partial
   conflicts: []
   notes: State documented in V2.02 Table 4.
   applicable_models:
@@ -1201,7 +1201,7 @@
     quote: ''
   source_type: primary
   confidence: 0.92
-  status: complete
+  status: partial
   conflicts: []
   notes: State documented in V2.02 Table 4.
   applicable_models:
@@ -1232,7 +1232,7 @@
     quote: ''
   source_type: primary
   confidence: 0.92
-  status: complete
+  status: partial
   conflicts: []
   notes: State documented in V2.02 Table 4.
   applicable_models:
@@ -1263,7 +1263,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: Intermediate state between REGISTERED and PDP_ACTIVE.
   applicable_models:

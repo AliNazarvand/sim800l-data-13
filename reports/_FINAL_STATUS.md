@@ -2,7 +2,7 @@
 
 
 
-**Generated**: 2026-10-13T19:10:14Z
+**Generated**: 2026-10-13T19:13:23Z
 
 
 
@@ -23,10 +23,6 @@
 | pending_blocked | 35 |
 
 | format_mismatch | 129 |
-
-| basic AT added (Q1) | 5 |
-
-| dat_06 nulled (Q3) | 6 |
 
 
 
@@ -82,28 +78,4 @@
 
 - 35 cross-refs are pending_blocked (missing manuals).
 
-- dat_07 pin-table coverage audit deferred (Q4).
-
 - dat_08, dat_16, dat_18 blocked (sources unavailable).
-
-
-
-## Pipeline
-
-
-
-- validate.py (R1-R24 + schema)
-
-- cross_ref.py (3-bucket)
-
-- classify_missing.py (4-way)
-
-- coverage_report.py
-
-- consistency_check.py (R20)
-
-- apply_decisions.py (Q1/Q3)
-
-- normalize_data.py
-
-- dedup_dat07.py

@@ -2,34 +2,29 @@
 
 - Datasets: 18
 - Total records: 1369
-- Total errors: 9
+- Total errors: 0
 - jsonschema available: True
 
 ## dat_01 [OK] records=340
 File: `dat_01_at_command.yaml`
 
-## dat_02 [FAIL] records=18
+## dat_02 [OK] records=18
 File: `dat_02_urc.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
 ## dat_03 [OK] records=255
 File: `dat_03_error_code.yaml`
 
-## dat_04 [FAIL] records=99
+## dat_04 [OK] records=99
 File: `dat_04_timing_timeout.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
-## dat_05 [FAIL] records=31
+## dat_05 [OK] records=31
 File: `dat_05_state_machine.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
-## dat_06 [FAIL] records=35
+## dat_06 [OK] records=35
 File: `dat_06_init_sequence.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
-## dat_07 [FAIL] records=77
+## dat_07 [OK] records=77
 File: `dat_07_hardware_reference.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
 ## dat_08 [OK] records=1
 File: `dat_08_firmware_compatibility.yaml`
@@ -37,24 +32,20 @@ File: `dat_08_firmware_compatibility.yaml`
 ## dat_09 [OK] records=14
 File: `dat_09_sms.yaml`
 
-## dat_10 [FAIL] records=24
+## dat_10 [OK] records=24
 File: `dat_10_gprs_data.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
-## dat_11 [FAIL] records=38
+## dat_11 [OK] records=38
 File: `dat_11_http_ftp_ssl.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
-## dat_12 [FAIL] records=13
+## dat_12 [OK] records=13
 File: `dat_12_audio.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
 ## dat_13 [OK] records=10
 File: `dat_13_sim_management.yaml`
 
-## dat_14 [FAIL] records=52
+## dat_14 [OK] records=52
 File: `dat_14_operator_apn.yaml`
-- ERROR: [dataset] R12: contains complete records but coverage is None and estimate != high
 
 ## dat_15 [OK] records=351
 File: `dat_15_power_management.yaml`

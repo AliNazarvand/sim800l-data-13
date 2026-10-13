@@ -9,7 +9,7 @@
     quote: 3.2.52 AT+CLVL  Loud Speaker V olume Level...................................................................94
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual Audio limit (9/13)'
   tags: []
@@ -42,7 +42,7 @@
     quote: 3.2.51 AT+CRSL  Ringer Sound Level .................................................................................93
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual Audio limit (9/13)'
   tags: []
@@ -75,7 +75,7 @@
     quote: 3.2.53 AT+CMUT  Mute Control ..........................................................................................95
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual Audio limit (9/13)'
   tags: []
@@ -108,7 +108,7 @@
     quote: 3.2.34 AT+CRSM  Restricted SIM Access ...........................................................................81
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual Audio limit (9/13)'
   tags: []
@@ -165,7 +165,7 @@
     quote: 3.2.41 AT+VTS  DTMF and Tone Generation ......................................................................85
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual Audio limit (9/13)'
   tags: []
@@ -285,7 +285,7 @@
     quote: 6.2.4 AT+CMIC  Change the Microphone Gain Level .......................................................133
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual Audio limit (9/13)'
   tags: []
@@ -330,7 +330,7 @@
     quote: 6.2.53 AT+CSDT  Switch On or Off Detecting SIM Card .................................................166
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual Audio limit (9/13)'
   tags: []
@@ -360,7 +360,7 @@
     quote: 6.2.19 AT+CHFA  Swap the Audio Channels .....................................................................143
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: 'limit_reason: AT Manual Audio limit (9/13)'
   tags: []

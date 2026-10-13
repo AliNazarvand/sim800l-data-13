@@ -9,7 +9,7 @@
     quote: 'unsolicited result code: +CBM: <length><CR><LF><pdu> (PDU mode'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -75,7 +75,7 @@
     quote: 'unsolicited result code: +CDS:'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -141,7 +141,7 @@
     quote: AT+CGREG <n> Y
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -184,7 +184,7 @@
     quote: '+CIPRXGET: (list of supported <mode>s),(list of supported <reqlength>)'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -227,7 +227,7 @@
     quote: '+CIPSTATUS: <n>,<bearer>, <TCP/UDP>, <IP address>, <port>,'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -269,7 +269,7 @@
     quote: 3.2.18 AT+CLIP Change URC parameter
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -317,7 +317,7 @@
     quote: AT+CMTE <mode> Y
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -383,7 +383,7 @@
     quote: '+CMTI: <mem>,<index>'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -450,7 +450,7 @@
     quote: '+CPIN: <code>'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -489,7 +489,7 @@
     quote: AT+CREG <n> Y
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -532,7 +532,7 @@
     quote: '(or +CRING: <type>) at a mobile terminating call.'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -596,7 +596,7 @@
     quote: '+CUSD: (list of supported <n>s)'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -639,7 +639,7 @@
     quote: '+FTPGETNAME: <value>'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -684,7 +684,7 @@
     quote: '+FTPPUTOPT: <value>'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -730,7 +730,7 @@
     quote: '+HTTPACTION: (0-2)'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []
@@ -766,7 +766,7 @@
     quote: '+HTTPREAD: ( list of supported <start_address>s),(list of supported <'
   source_type: primary
   confidence: 0.7
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags: []

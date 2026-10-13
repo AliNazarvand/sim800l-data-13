@@ -499,7 +499,7 @@
     quote: 'Table 7: Electronic characteristic of the RESET pin -- V_IH'
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: Added by correction-pass v4.
   applicable_models:
@@ -529,7 +529,7 @@
     quote: 'Table 7: Electronic characteristic of the RESET pin -- low power time'
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: Added by correction-pass v4.
   applicable_models:
@@ -559,7 +559,7 @@
     quote: pull down the PWRKEY pin for at least 1 second and release
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: Added by correction-pass v4.
   applicable_models:
@@ -589,7 +589,7 @@
     quote: Wait for at least 800ms after STATUS pin changed to low level
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: Added by correction-pass v4.
   applicable_models:
@@ -619,7 +619,7 @@
     quote: DTR pin is pulled to low level for about 50ms
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: Added by correction-pass v4.
   applicable_models:
@@ -649,7 +649,7 @@
     quote: no data transfer over 5 seconds on the RXD signal
   source_type: primary
   confidence: 0.85
-  status: complete
+  status: partial
   conflicts: []
   notes: Added by correction-pass v4.
   applicable_models:
@@ -669,7 +669,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -698,7 +698,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -727,7 +727,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -756,7 +756,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -785,7 +785,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -814,7 +814,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -843,7 +843,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -872,7 +872,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -901,7 +901,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -930,7 +930,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -959,7 +959,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -988,7 +988,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1017,7 +1017,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1046,7 +1046,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1075,7 +1075,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1104,7 +1104,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1133,7 +1133,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1162,7 +1162,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1191,7 +1191,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1220,7 +1220,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1249,7 +1249,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1278,7 +1278,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1307,7 +1307,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1336,7 +1336,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1365,7 +1365,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1394,7 +1394,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1423,7 +1423,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1452,7 +1452,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1481,7 +1481,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1510,7 +1510,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1539,7 +1539,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1568,7 +1568,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1597,7 +1597,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1626,7 +1626,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1655,7 +1655,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1684,7 +1684,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1713,7 +1713,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1742,7 +1742,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1771,7 +1771,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1800,7 +1800,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1829,7 +1829,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1858,7 +1858,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1887,7 +1887,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1916,7 +1916,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1945,7 +1945,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -1974,7 +1974,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2003,7 +2003,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2032,7 +2032,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2061,7 +2061,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2090,7 +2090,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2119,7 +2119,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2148,7 +2148,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2177,7 +2177,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2206,7 +2206,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2235,7 +2235,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2264,7 +2264,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2293,7 +2293,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2322,7 +2322,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2351,7 +2351,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2380,7 +2380,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2409,7 +2409,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2438,7 +2438,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2467,7 +2467,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2496,7 +2496,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2525,7 +2525,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2554,7 +2554,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2583,7 +2583,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2612,7 +2612,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2641,7 +2641,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2670,7 +2670,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2699,7 +2699,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2728,7 +2728,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2757,7 +2757,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2786,7 +2786,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2815,7 +2815,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2844,7 +2844,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2873,7 +2873,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2902,7 +2902,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2931,7 +2931,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2960,7 +2960,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
@@ -2989,7 +2989,7 @@
     quote: ''
   source_type: primary
   confidence: 0.9
-  status: complete
+  status: partial
   conflicts: []
   notes: ''
   tags:
