@@ -1,95 +1,21 @@
-# Real-Missing Classification (rebuilt)
+# Real-Missing Classification
 
-- manual_owned_pending : 35
-- format_mismatch_bucket: 129
-- real_missing          : 0
+Total refs: **0**
 
-## manual_owned_pending
-- `AT+CEREG` (from dat_10) [SIM800 Series TCP/IP AT Command Manual]
-- `AT+CGCONTRDP` (from dat_10) [SIM800 Series TCP/IP AT Command Manual]
-- `AT+CIPDDREM` (from dat_10) [SIM800 Series TCP/IP AT Command Manual]
-- `AT+FTPCLOSE` (from dat_11) [SIM800 Series FTP AT Command Manual]
-- `AT+FTPCWD` (from dat_11) [SIM800 Series FTP AT Command Manual]
-- `AT+FTPFLST` (from dat_11) [SIM800 Series FTP AT Command Manual]
-- `AT+FTPOPEN` (from dat_11) [SIM800 Series FTP AT Command Manual]
-- `AT+FTPPASS` (from dat_11) [SIM800 Series FTP AT Command Manual]
-- `AT+FTPPWD` (from dat_11) [SIM800 Series FTP AT Command Manual]
-- `AT+FTPUSER` (from dat_11) [SIM800 Series FTP AT Command Manual]
-- `AT+HTTPHEAD` (from dat_11) [SIM800 Series HTTP AT Command Manual]
-- `AT+HTTPSSL` (from dat_11) [SIM800 Series HTTP AT Command Manual]
-- `AT+HTTPURL` (from dat_11) [SIM800 Series HTTP AT Command Manual]
-- `AT+SSLCFG` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLCLOSE` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLCONF` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLOPEN` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLRECV` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLSEND` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLSETCA` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLSETCERT` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLSETKEY` (from dat_11) [SIM800 Series SSL AT Command Manual]
-- `AT+CADTONE` (from dat_12) [SIM800 Series Audio AT Command Manual]
-- `AT+CATONE` (from dat_12) [SIM800 Series Audio AT Command Manual]
-- `AT+CLDTONE` (from dat_12) [SIM800 Series Audio AT Command Manual]
-- `AT+CPCMREG` (from dat_12) [SIM800 Series Audio AT Command Manual]
-- `AT+SSLCFG` (from dat_17) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLCLOSE` (from dat_17) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLCONF` (from dat_17) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLOPEN` (from dat_17) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLRECV` (from dat_17) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLSEND` (from dat_17) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLSETCA` (from dat_17) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLSETCERT` (from dat_17) [SIM800 Series SSL AT Command Manual]
-- `AT+SSLSETKEY` (from dat_17) [SIM800 Series SSL AT Command Manual]
+AT index size: 335
 
-## format_mismatch_bucket
-- `AT+CGREG` (from dat_02)
-- `AT+CIPRXGET` (from dat_02)
-- `AT+CIPSTATUS` (from dat_02)
-- `AT+CLIP` (from dat_02)
-- `AT+CNMI` (from dat_02)
-- `AT+CPIN` (from dat_02)
-- `AT+CREG` (from dat_02)
-- `AT+CUSD` (from dat_02)
-- `AT+FTPGET` (from dat_02)
-- `AT+FTPPUT` (from dat_02)
-- `AT+HTTPACTION` (from dat_02)
-- `AT+HTTPREAD` (from dat_02)
-- `AT+CCID` (from dat_05)
-- `AT+CFUN=1` (from dat_05)
-- `AT+CFUN=1,1` (from dat_05)
-- `AT+CGACT` (from dat_05)
-- `AT+CGATT` (from dat_05)
-- `AT+CGATT=1` (from dat_05)
-- `AT+CGDCONT` (from dat_05)
-- `AT+CIMI` (from dat_05)
-- `AT+CIPCLOSE` (from dat_05)
-- `AT+CIPSEND` (from dat_05)
-- `AT+CIPSTART` (from dat_05)
-- `AT+CMGF` (from dat_05)
-- `AT+CMGF=1` (from dat_05)
-- `AT+CMGR` (from dat_05)
-- `AT+CMGS` (from dat_05)
-- `AT+CMTE` (from dat_05)
-- `AT+COPS?` (from dat_05)
-- `AT+CPIN?` (from dat_05)
-- `AT+CPOWD` (from dat_05)
-- `AT+CREG=1` (from dat_05)
-- `AT+CREG?` (from dat_05)
-- `AT+CSCLK` (from dat_05)
-- `AT+CSCLK=0` (from dat_05)
-- `AT+CSCLK=1` (from dat_05)
-- `AT+CSTT` (from dat_05)
-- `AT+CFUN=1` (from dat_06)
-- `AT+CGACT=1,<cid>` (from dat_06)
-- `AT+CGATT=1` (from dat_06)
-- `AT+CGREG?` (from dat_06)
-- `AT+CIFSR` (from dat_06)
-- `AT+CIICR` (from dat_06)
-- `AT+CIPSTART="TCP","host",port` (from dat_06)
-- `AT+CIPSTART=<mode>,<IP>,<port>` (from dat_06)
-- `AT+CMGF=1` (from dat_06)
-- `AT+CPIN=<pin>` (from dat_06)
-- `AT+CPIN?` (from dat_06)
-- `AT+CREG=1` (from dat_06)
-- `AT+CREG?` (from dat_06)
-- ... and 79 more
+## basic_at_missing (0)
+
+_none_
+
+## manual_owned_pending (0)
+
+_none_
+
+## not_a_command (0)
+
+_none_
+
+## unknown (0)
+
+_none_

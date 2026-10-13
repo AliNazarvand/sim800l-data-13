@@ -749,3 +749,14 @@ now has:
 - GAP_REPORT.md, ROLE_MAP.md, TODO.md, CLUSTERS.md rewritten with real numbers.
 - _FINAL_STATUS.md regenerated.
 - Total records: 1369; validation errors: 0.
+
+## 2026-10-13T19:11:56Z — Final Hardening
+
+- Backup: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-2026-10-13T19-11-56
+- cross_ref.py extended with 3 rules (dat_15->dat_01, dat_14->dat_10, dat_17->dat_11).
+- validate.py hardened: R12 coverage + SIM800H-only check.
+- dat_XX_REPORT.md regenerated with "Why partial/blocked" reasons.
+- Legacy _validation_summary.json removed.
+- CHANGELOG.md bumped to 0.9.0.
+- Final: records=1369 errors=9 pending_blocked=35
+  format_mismatch=129 real_missing=0

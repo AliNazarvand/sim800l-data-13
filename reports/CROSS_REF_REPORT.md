@@ -1,6 +1,6 @@
 # Cross-Reference Report
 
-- Rules evaluated: 16
+- Rules evaluated: 19
 - pending_blocked : 35
 - format_mismatch : 129
 - real_missing    : 0
@@ -42,3 +42,7 @@
     - pb=9 fm=0 rm=0
         [pending_blocked] AT+SSLCFG, AT+SSLCLOSE, AT+SSLCONF, AT+SSLOPEN, AT+SSLRECV, AT+SSLSEND, AT+SSLSETCA, AT+SSLSETCERT, AT+SSLSETKEY
 - **Cert.related_commands -> AT.command** — ok
+- **Power.command -> AT.command (CFUN/sleep)** — ok
+- **Operator.mcc -> GPRS.mcc (APN consistency)** — pending_blocked
+    - dat_10.mcc empty
+- **Cert.command -> SSL/FTP/HTTP.command** — ok

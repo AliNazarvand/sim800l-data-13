@@ -37,6 +37,9 @@ RULES = [
      "SIM800 Series SSL AT Command Manual"),
     ("dat_17", "related_commands", "dat_01", "command",    "Cert.related_commands -> AT.command",
      "SIM800 Series SSL AT Command Manual"),
+    ("dat_15", "command",          "dat_01", "command",    "Power.command -> AT.command (CFUN/sleep)", None),
+    ("dat_14", "mcc",              "dat_10", "mcc",        "Operator.mcc -> GPRS.mcc (APN consistency)", None),
+    ("dat_17", "command",          "dat_11", "command",    "Cert.command -> SSL/FTP/HTTP.command", None),
 ]
 
 # All manuals that are NOT present in sources/originals/, with their prefixes.

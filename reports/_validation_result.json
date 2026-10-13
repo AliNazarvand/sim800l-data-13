@@ -6,15 +6,19 @@
       "records": 340,
       "errors": [],
       "warnings": [],
+      "complete_records": 0,
       "schema_ok": true
     },
     {
       "dataset": "dat_02",
       "file": "dat_02_urc.yaml",
       "records": 18,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 16,
+      "schema_ok": false
     },
     {
       "dataset": "dat_03",
@@ -22,39 +26,52 @@
       "records": 255,
       "errors": [],
       "warnings": [],
+      "complete_records": 237,
       "schema_ok": true
     },
     {
       "dataset": "dat_04",
       "file": "dat_04_timing_timeout.yaml",
       "records": 99,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 87,
+      "schema_ok": false
     },
     {
       "dataset": "dat_05",
       "file": "dat_05_state_machine.yaml",
       "records": 31,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 8,
+      "schema_ok": false
     },
     {
       "dataset": "dat_06",
       "file": "dat_06_init_sequence.yaml",
       "records": 35,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 7,
+      "schema_ok": false
     },
     {
       "dataset": "dat_07",
       "file": "dat_07_hardware_reference.yaml",
       "records": 77,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 77,
+      "schema_ok": false
     },
     {
       "dataset": "dat_08",
@@ -62,6 +79,7 @@
       "records": 1,
       "errors": [],
       "warnings": [],
+      "complete_records": 0,
       "schema_ok": true
     },
     {
@@ -70,31 +88,41 @@
       "records": 14,
       "errors": [],
       "warnings": [],
+      "complete_records": 0,
       "schema_ok": true
     },
     {
       "dataset": "dat_10",
       "file": "dat_10_gprs_data.yaml",
       "records": 24,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 21,
+      "schema_ok": false
     },
     {
       "dataset": "dat_11",
       "file": "dat_11_http_ftp_ssl.yaml",
       "records": 38,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 19,
+      "schema_ok": false
     },
     {
       "dataset": "dat_12",
       "file": "dat_12_audio.yaml",
       "records": 13,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 8,
+      "schema_ok": false
     },
     {
       "dataset": "dat_13",
@@ -102,15 +130,19 @@
       "records": 10,
       "errors": [],
       "warnings": [],
+      "complete_records": 0,
       "schema_ok": true
     },
     {
       "dataset": "dat_14",
       "file": "dat_14_operator_apn.yaml",
       "records": 52,
-      "errors": [],
+      "errors": [
+        "[dataset] R12: contains complete records but coverage is None and estimate != high"
+      ],
       "warnings": [],
-      "schema_ok": true
+      "complete_records": 52,
+      "schema_ok": false
     },
     {
       "dataset": "dat_15",
@@ -118,6 +150,7 @@
       "records": 351,
       "errors": [],
       "warnings": [],
+      "complete_records": 1,
       "schema_ok": true
     },
     {
@@ -126,6 +159,7 @@
       "records": 1,
       "errors": [],
       "warnings": [],
+      "complete_records": 0,
       "schema_ok": true
     },
     {
@@ -134,6 +168,7 @@
       "records": 9,
       "errors": [],
       "warnings": [],
+      "complete_records": 0,
       "schema_ok": true
     },
     {
@@ -142,10 +177,11 @@
       "records": 1,
       "errors": [],
       "warnings": [],
+      "complete_records": 0,
       "schema_ok": true
     }
   ],
-  "total_errors": 0,
+  "total_errors": 9,
   "total_records": 1369,
   "jsonschema": true
 }
