@@ -622,3 +622,106 @@ now has:
 - Removed duplicate per-dataset report filenames.
 - dat_15 marked partial with reason 'pipeline over-extraction'.
 - Result: complete=8 partial=4 blocked=5 deferred=1 (total=18).
+
+## Session: Targeted Correction Script Run
+
+- Applied dataset-specific schemas (only where generic template was detected).
+- Installed comprehensive validate.py and cross_ref.py with correct argument handling.
+- Executed both scripts with $ProjectRoot argument.
+- Validation and cross-reference reports regenerated in reports/.
+
+## Session 1405-07-21T22:15:44Z - Full Correction Run
+
+- Backup created at: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-14050721-221525
+- 18 dataset schemas force-rewritten with dataset-specific fields.
+- repair_data.py, validate.py, cross_ref.py force-rewritten.
+- repair_data.py executed (placeholder records removed, applicable_models normalized).
+- validate.py exit code: 3
+- cross_ref.py exit code: 0
+- COVERAGE_MATRIX.md regenerated from validation results.
+
+## Session 1405-07-21T22:19:49Z - Safe Recovery & Repair
+
+- Safety backup created at: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-recovery-14050721-221919
+- Ran scripts/recover_and_repair.py: for each dataset, selected the best
+  available source (current / archive / backup) and repaired ALL records so
+  the 7 required schema fields are present. No records were dropped unless
+  they were not dictionaries.
+- validate.py exit code: 3
+- cross_ref.py exit code: 0
+- Audit: reports/_recovery_audit.json
+
+## 1405-07-21T22-22-44 - Final Alignment
+
+- Backup: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-1405-07-21T22-22-44
+- 18 schemas rewritten with nullable optionals (fix 6008-null-mismatch).
+- normalize_data.py: preserved existing IDs, marked blocked datasets (dat_08,16,18),
+  applied per-dataset categories, honest source for blocked, ISO 8601 timestamps.
+- cross_ref.py: expanded rules (dat_02->dat_05, dat_04->dat_05/06, dat_06->dat_05).
+- validate.py exit: 0; cross_ref.py exit: 0.
+- Reports regenerated: COVERAGE_MATRIX, GAP_REPORT, TODO, ROLE_MAP, CLUSTERS,
+  DECISIONS_LOG, dat_XX_REPORT.
+
+## 2026-10-13T18:55:14Z — Report Finalization & Cross-ref Classification
+
+- Backup: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-2026-10-13T18-55-14
+- ISO 8601 UTC timestamps enforced (InvariantCulture).
+- cross_ref.py v3: classifies refs into pending_blocked / format_mismatch / real_missing.
+- coverage_report.py: computes coverage for dat_01 vs AT manual index; estimates for others.
+- consistency_check.py: R20 cross-dataset field comparison.
+- All delivery reports regenerated: SOURCE_INVENTORY, CHANGELOG (root+reports), README,
+  PHASE_1_REPORT, CLUSTERS, TODO, DECISIONS_LOG, dat_XX_REPORT.
+- Exit codes: validate=0, cross_ref=3, coverage=0, consistency=0.
+
+## 2026-10-13T18:59:05Z — Fix Normalizer & Dedup dat_07
+
+- Backup: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-2026-10-13T18-59-05
+- cross_ref.py: strong normalizer (AT prefix, +, ?, =).
+  Result: pending_blocked=9, format_mismatch=129, real_missing=38.
+- dedup_dat07.py: removed duplicates from dat_07.
+- validate.py exit: 0
+- coverage exit: 0
+- Removed dat_07 IDs archived at reports/_archive/_dat07_removed_ids.json.
+
+## 2026-10-13T19:00:52Z — R14 Classification
+
+- Backup: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-2026-10-13T19-00-52
+- classify_missing.py: separated remaining real_missing into 3 categories.
+  - basic_at_missing     : 6
+  - manual_owned_pending : 0
+  - not_a_command        : 6
+  - unknown              : 26
+- No modification to dat_01 (R14: awaiting owner decision).
+- Outputs: reports/real_missing_classification.{json,md}
+
+## 2026-10-13T19:02:17Z — Corrected R14 Classification
+
+- Backup: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-2026-10-13T19-02-17
+- classify_missing.py rewritten:
+  - normalize_for_manual() strips AT prefix before matching manual-owned prefixes
+  - AT_COMMAND_RE accepts AT+XXX, +XXX, and bare AT
+  - MANUAL_PREFIXES for TCP/IP completed
+  - NOT_COMMAND_HINTS actually used
+  - cross-check with _at_commands_index.json
+- Result: basic=0, manual_owned=26, not_a_command=6, unknown=6
+- Outputs: reports/real_missing_classification.{json,md}
+- dat_01 untouched (R14).
+
+## 2026-10-13T19:03:54Z — AT Index Loader Fix
+
+- Backup: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-2026-10-13T19-03-54
+- classify_missing.py: load_at_index now supports flat dict {cmd: dat_01_id}.
+- Added BASIC_AT_WHITELIST fallback for AT/ATA/ATD/ATH/ATE0.
+- Result: basic=2, manual=26, not_a_command=6, unknown=4.
+- validate: total_records=1364 errors=0
+- dat_01 untouched (R14).
+
+## 2026-10-13T19:05:54Z — Final Closure
+
+- Backup: D:\Project\Electronic Project\Control Board SMS 2\Documents\New folder (2)\New 2\Datasheet\01 - sim800l-data\027-backup-2026-10-13T19-05-54
+- classify_missing.py regex fixed → ATA/ATD/ATH/ATE0 recognized as AT.
+- apply_decisions.py: Q1 added 5 commands to dat_01; Q3 nulled 6 dat_06 command-fields.
+- Pipeline exits: classify=1 apply=0 cross_ref=3 validate=0 coverage=0.
+- Total records: 1369; validation errors: 0.
+- dat_07 remains partial (pin-table coverage check pending).
+- Git commit branch: feature/complete-datasets.

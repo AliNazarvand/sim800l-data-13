@@ -1,17 +1,10 @@
-# dat_15 — Power Management
+# dat_15 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 351
+- Status: partial
+- Coverage: —
+- Coverage estimate: high
+- Source: SIM800H&SIM800L Hardware Design V2.02
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | partial |
-| Real records | 351 |
-| Unique records | 351 |
-| Total records | 351 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | oversize (real=351 > 50) |
-
-## Notes
-Dataset partial; see Reason above and TODO.md.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

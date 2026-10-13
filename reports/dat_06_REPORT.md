@@ -1,17 +1,10 @@
-# dat_06 — Init Sequence
+# dat_06 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 35
+- Status: partial
+- Coverage: —
+- Coverage estimate: medium
+- Source: SIM800 Series AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | complete |
-| Real records | 20 |
-| Unique records | 20 |
-| Total records | 20 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | source available; coverage/threshold met |
-
-## Notes
-Dataset complete per R12 (coverage in [95%, 100%] or threshold met).
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

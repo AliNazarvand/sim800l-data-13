@@ -1,17 +1,10 @@
-# dat_17 — Certificate/Key Store
+# dat_17 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 9
+- Status: partial
+- Coverage: —
+- Coverage estimate: low
+- Source: SIM800 Series SSL AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | blocked |
-| Real records | 9 |
-| Unique records | 9 |
-| Total records | 9 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | required source document is not available |
-
-## Notes
-Dataset blocked; required source not available. See TODO.md.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

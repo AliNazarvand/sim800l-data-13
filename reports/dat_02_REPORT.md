@@ -1,17 +1,10 @@
-# dat_02 — URC
+# dat_02 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 18
+- Status: partial
+- Coverage: —
+- Coverage estimate: low
+- Source: SIM800 Series AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | blocked |
-| Real records | 0 |
-| Unique records | 0 |
-| Total records | 1 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | required source document is not available |
-
-## Notes
-Dataset blocked; required source not available. See TODO.md.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

@@ -1,14 +1,6 @@
-# Changelog — sim800l-data
+# Changelog
 
-## [2026-10-13T18:13:14Z] — Final state
+## [Unreleased] - 2026-10-13T18:55:14Z
 
-### Status
-- Complete: 8 / 18
-- Partial: 4 / 18
-- Blocked: 5 / 18
-- Deferred: 1 / 18
-
-### Fixed in this session
-- dat_01 dedup (610 → 335) via command-name normalization.
-- Status counting bug (.Count on Hashtable) fixed.
-- Root README, PHASE_1_REPORT, CHANGELOG regenerated.
+- Infrastructure and dataset completion pipeline stabilized.
+- See reports/CHANGELOG.md for detailed report-level changes.

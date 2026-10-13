@@ -13259,3 +13259,185 @@
   - extracted
   created_at: '2026-10-13T18:03:09Z'
   updated_at: '2026-10-13T18:03:09Z'
+- id: dat_01_0336
+  category: General
+  command: AT
+  mode: exec
+  syntax: AT
+  parameters: []
+  response_success: OK
+  response_error: ERROR
+  examples:
+  - AT
+  - AT -> OK
+  related_urcs: []
+  related_states: []
+  related_commands: []
+  firmware_min: null
+  firmware_max: null
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2014-01-01'
+    page: ''
+    section: General AT Commands
+    quote: ''
+  source_type: primary
+  confidence: 0.6
+  status: partial
+  conflicts: []
+  notes: 'Basic AT command added from AT Manual V1.01. Attention: checks module readiness.
+    Response: OK.'
+  tags:
+  - at
+  - general
+  - basic
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T19:05:59Z'
+  updated_at: '2026-10-13T19:05:59Z'
+- id: dat_01_0337
+  category: General
+  command: ATA
+  mode: exec
+  syntax: ATA
+  parameters: []
+  response_success: OK
+  response_error: ERROR
+  examples:
+  - ATA
+  - ATA -> OK
+  related_urcs: []
+  related_states: []
+  related_commands: []
+  firmware_min: null
+  firmware_max: null
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2014-01-01'
+    page: ''
+    section: General AT Commands
+    quote: ''
+  source_type: primary
+  confidence: 0.6
+  status: partial
+  conflicts: []
+  notes: Basic AT command added from AT Manual V1.01. Answer an incoming call.
+  tags:
+  - at
+  - general
+  - basic
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T19:05:59Z'
+  updated_at: '2026-10-13T19:05:59Z'
+- id: dat_01_0338
+  category: General
+  command: ATD
+  mode: exec
+  syntax: ATD
+  parameters: []
+  response_success: OK
+  response_error: ERROR
+  examples:
+  - ATD
+  - ATD -> OK
+  related_urcs: []
+  related_states: []
+  related_commands: []
+  firmware_min: null
+  firmware_max: null
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2014-01-01'
+    page: ''
+    section: General AT Commands
+    quote: ''
+  source_type: primary
+  confidence: 0.6
+  status: partial
+  conflicts: []
+  notes: Basic AT command added from AT Manual V1.01. Dial a voice call or data number
+    (ATD<number>;).
+  tags:
+  - at
+  - general
+  - basic
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T19:05:59Z'
+  updated_at: '2026-10-13T19:05:59Z'
+- id: dat_01_0339
+  category: General
+  command: ATH
+  mode: exec
+  syntax: ATH
+  parameters: []
+  response_success: OK
+  response_error: ERROR
+  examples:
+  - ATH
+  - ATH -> OK
+  related_urcs: []
+  related_states: []
+  related_commands: []
+  firmware_min: null
+  firmware_max: null
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2014-01-01'
+    page: ''
+    section: General AT Commands
+    quote: ''
+  source_type: primary
+  confidence: 0.6
+  status: partial
+  conflicts: []
+  notes: Basic AT command added from AT Manual V1.01. Hang up the current call.
+  tags:
+  - at
+  - general
+  - basic
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T19:05:59Z'
+  updated_at: '2026-10-13T19:05:59Z'
+- id: dat_01_0340
+  category: General
+  command: ATE0
+  mode: exec
+  syntax: ATE0
+  parameters: []
+  response_success: OK
+  response_error: ERROR
+  examples:
+  - ATE0
+  - ATE0 -> OK
+  related_urcs: []
+  related_states: []
+  related_commands: []
+  firmware_min: null
+  firmware_max: null
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2014-01-01'
+    page: ''
+    section: General AT Commands
+    quote: ''
+  source_type: primary
+  confidence: 0.6
+  status: partial
+  conflicts: []
+  notes: Basic AT command added from AT Manual V1.01. Disable command echo.
+  tags:
+  - at
+  - general
+  - basic
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T19:05:59Z'
+  updated_at: '2026-10-13T19:05:59Z'

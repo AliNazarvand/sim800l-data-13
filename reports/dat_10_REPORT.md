@@ -1,17 +1,10 @@
-# dat_10 — GPRS/Data
+# dat_10 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 24
+- Status: partial
+- Coverage: —
+- Coverage estimate: medium
+- Source: SIM800 Series AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | complete |
-| Real records | 21 |
-| Unique records | 21 |
-| Total records | 22 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | source available; coverage/threshold met |
-
-## Notes
-Dataset complete per R12 (coverage in [95%, 100%] or threshold met).
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

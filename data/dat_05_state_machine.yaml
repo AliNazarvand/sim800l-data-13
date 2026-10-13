@@ -1,390 +1,1275 @@
-records:
 - id: dat_05_0001
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  category: Operating Mode
   state_name: 'OFF'
-  description: Module fully powered off
+  description: Module powered off. Only RTC power supply remains active.
   entry_conditions:
-  - Power down AT+CPOWD or PWRKEY
+  - PWRKEY pulled low for at least 1 second (power down)
+  - AT+CPOWD=1 issued
+  - Under-voltage (< 3.4V) auto power down
+  - Over-voltage (> 4.4V) auto power down
   exit_conditions:
-  - PWRKEY low >=1s
+  - PWRKEY pulled low for at least 1 second (power on)
+  - External reset via RESET pin
   events:
-  - PWRKEY pull-down
-  actions:
-  - Assert PWRKEY low
+  - NORMAL POWER DOWN
+  - UNDER-VOLTAGE POWER DOWN
+  - OVER-VOLTAGE POWER DOWN
+  actions: []
+  related_commands:
+  - AT+CPOWD
+  related_urcs:
+  - NORMAL POWER DOWN
+  related_timings:
+  - dat_04_0015
+  - dat_04_0016
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 4.2.2
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: 2.3. Operating Mode / Power down
+    quote: 'Power down: The power management unit shuts down the power supply for
+      the baseband part of the module, and only the power supply for the RTC is remained.'
+  source_type: primary
+  confidence: 0.75
+  status: partial
+  conflicts: []
+  notes: Entry/exit conditions and URCs are cross-referenced from sections 4.2.1,
+    4.2.2 and 4.2.2.3/4 (V2.02).
   tags:
   - state
+  - power
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
 - id: dat_05_0002
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  category: Operating Mode
   state_name: POWER_ON
-  description: Boot sequence running
+  description: Module powered on and booting. Firmware initialises serial port and
+    SIM interface.
   entry_conditions:
-  - PWRKEY pull-down done
+  - PWRKEY pulled low for at least 1 second, then released
   exit_conditions:
-  - RDY URC received
+  - Full functionality enabled (AT+CFUN=1) and RDY URC received
   events:
-  - RDY emitted
+  - RDY
   actions:
-  - Wait for RDY
-  - Send AT
+  - Initialise UART
+  - Read SIM
+  - Register to network
+  related_commands:
+  - AT
+  related_urcs:
+  - RDY
+  related_timings:
+  - dat_04_0014
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 4.2.1
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '22'
+    section: 4.2.1. Power on SIM800H&SIM800L
+    quote: Customer can power on SIM800H&SIM800L by pulling down the PWRKEY pin for
+      at least 1 second and release.
+  source_type: primary
+  confidence: 0.75
+  status: partial
+  conflicts: []
+  notes: Initial boot sequences (SIM init, network reg) are described in later sections
+    and are captured in dat_06.
   tags:
   - state
+  - power
+  - boot
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
 - id: dat_05_0003
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  category: Operating Mode
   state_name: SIM_READY
-  description: SIM detected and initialized
+  description: SIM card detected and initialised; PIN verified. Module is ready to
+    query IMSI/ICCID.
   entry_conditions:
-  - AT+CPIN? READY
+  - SIM card inserted and detected
+  - 'AT+CPIN? returns +CPIN: READY'
   exit_conditions:
-  - AT+CFUN=0 or SIM removed
+  - SIM removed or SIM failure detected
   events:
+  - +CPIN
+  actions:
+  - Query IMSI
+  - Query ICCID
+  related_commands:
   - AT+CPIN?
-  - '+CPIN: READY'
-  actions:
-  - Read IMSI
-  - Read ICCID
+  - AT+CIMI
+  - AT+CCID
+  related_urcs:
+  - +CPIN
+  related_timings: []
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 3.2.28
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '38'
+    section: 4.8. SIM Card Interface
+    quote: null
+  source_type: primary
+  confidence: 0.4
+  status: inferred
+  conflicts: []
+  notes: No explicit SIM_READY state in V2.02; inferred from section 4.8 (SIM Card
+    Interface) and standard SIM800 AT semantics. Related AT commands are documented
+    in the AT Command Manual (document [1]).
   tags:
   - state
+  - sim
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
 - id: dat_05_0004
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  category: Operating Mode
   state_name: NETWORK_SEARCH
-  description: Searching network
+  description: Module is searching for a GSM network after SIM initialisation. DRX
+    idle timing differs when not yet registered.
   entry_conditions:
-  - SIM ready + CFUN=1
+  - SIM_READY reached
+  - AT+CFUN=1 (full functionality) enabled
   exit_conditions:
-  - Registered home/roaming
+  - +CREG or +CGREG URC indicates registration
   events:
-  - '+CREG: 1'
-  - '+CREG: 5'
+  - +CREG
+  - +CGREG
   actions:
-  - Poll AT+CREG?
+  - Scan GSM bands
+  - Attempt registration
+  related_commands:
+  - AT+COPS?
+  - AT+CREG?
+  related_urcs:
+  - +CREG
+  - +CGREG
+  related_timings:
+  - dat_04_0010
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 3.2.32
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '49'
+    section: 6.8. Current Consumption
+    quote: 64ms On/ 800ms Off SIM800H&SIM800L not registered the network
+  source_type: primary
+  confidence: 0.4
+  status: inferred
+  conflicts: []
+  notes: The state itself is inferred from brief; the DRX on-time (64 ms, off-time
+    800 ms when not registered) is documented in section 6.8 and cross-linked to dat_04_0010.
   tags:
   - state
+  - network
+  - drx
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
 - id: dat_05_0005
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  category: Operating Mode
   state_name: REGISTERED
-  description: Registered to network
+  description: Module is registered to the GSM network; software is active; module
+    ready to communicate. Corresponds to the GSM IDLE operating mode in V2.02.
   entry_conditions:
-  - '+CREG: 1 or 5'
+  - '+CREG: 1 or +CREG: 5 received'
   exit_conditions:
-  - GPRS attach or CFUN=0
+  - PDP activation (GPRS STANDBY)
+  - Call initiated (GSM TALK)
+  - Deregistration or power down
   events:
   - '+CREG: 1'
-  - '+CREG: 5'
   actions:
-  - Enable GPRS
+  - Receive paging
+  - Receive SMS (via SMS_MODE)
+  related_commands:
+  - AT+CREG?
+  related_urcs:
+  - +CREG
+  - +CGREG
+  related_timings:
+  - dat_04_0012
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 3.2.32
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: 2.3. Operating Mode / GSM IDLE
+    quote: 'GSM IDLE: Software is active. Module is registered to the GSM network,
+      and the module is ready to communicate.'
+  source_type: primary
+  confidence: 0.7
+  status: partial
+  conflicts: []
+  notes: The brief's REGISTERED state is captured in V2.02 under 'GSM IDLE'. DRX registered
+    timing (64 ms on / 3000 ms off) is in section 6.8, cross-linked to dat_04_0012.
   tags:
   - state
+  - network
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
 - id: dat_05_0006
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
-  state_name: GPRS_STANDBY
-  description: GPRS attached, no data session
-  entry_conditions:
-  - AT+CGATT=1
-  exit_conditions:
-  - PDP activation
-  events:
-  - '+CGATT: 1'
-  actions:
-  - Configure APN
-  source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 7.2.1
-  confidence: 0.85
-  status: complete
-  notes: ''
-  tags:
-  - state
-- id: dat_05_0007
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  category: Operating Mode
   state_name: PDP_ACTIVE
-  description: PDP active, local IP assigned
+  description: GPRS PDP context active; module is ready to send/receive GPRS data.
+    Corresponds to GPRS STANDBY in V2.02.
   entry_conditions:
-  - AT+CIICR/CIFSR
+  - AT+CGATT=1 (GPRS attached)
+  - AT+CGACT=1 (PDP context activated)
   exit_conditions:
-  - CIPSHUT or PDP DEACT
+  - AT+CGACT=0 or AT+CGATT=0
+  - 'PDP context deactivated (+PDP: DEACT)'
   events:
   - '+PDP: DEACT'
   actions:
-  - Open TCP/UDP
+  - Keep PDP context alive
+  - Accept incoming data (enter DATA_MODE)
+  related_commands:
+  - AT+CGATT
+  - AT+CGACT
+  - AT+CGDCONT
+  related_urcs:
+  - '+PDP: DEACT'
+  related_timings: []
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 8.2.10
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: 2.3. Operating Mode / GPRS STANDBY
+    quote: 'GPRS STANDBY: Module is ready for GPRS data transfer, but no data is currently
+      sent or received.'
+  source_type: primary
+  confidence: 0.7
+  status: partial
+  conflicts: []
+  notes: PDP context handling described in TCP/IP AT Command Manual (document [1]);
+    cross-reference with dat_10 (GPRS/Data).
   tags:
   - state
-- id: dat_05_0008
-  source_type: primary
+  - gprs
   applicable_models:
   - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_0007
+  category: Operating Mode
   state_name: DATA_MODE
-  description: Active TCP/UDP transfer
+  description: GPRS data transfer in progress (PPP/TCP/UDP). Corresponds to GPRS DATA
+    in V2.02.
   entry_conditions:
-  - CIPSTART returns CONNECT OK
+  - PDP_ACTIVE reached
+  - AT+CIPSTART or PPP/TCP/UDP connection established
   exit_conditions:
-  - CIPCLOSE or remote disconnect
+  - Data transfer completed and connection closed
+  - AT+CIPCLOSE
   events:
-  - CONNECT OK
-  - SEND OK
-  - CLOSED
+  - +CIPCLOSE
+  - +CIPSTATUS
   actions:
-  - Send via CIPSEND
+  - Transfer data
+  - Report URCs on incoming data
+  related_commands:
+  - AT+CIPSTART
+  - AT+CIPSEND
+  - AT+CIPCLOSE
+  related_urcs:
+  - +CIPRXGET
+  - +CIPCLOSE
+  - +CIPSTATUS
+  related_timings: []
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 8.2.2
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: 2.3. Operating Mode / GPRS DATA
+    quote: 'GPRS DATA: There is GPRS data transfer (PPP or TCP or UDP) in progress.'
+  source_type: primary
+  confidence: 0.75
+  status: partial
+  conflicts: []
+  notes: Power consumption depends on network settings and GPRS configuration (see
+    V2.02 section 6.8). Cross-reference with dat_10.
   tags:
   - state
-- id: dat_05_0009
-  source_type: primary
+  - gprs
+  - data
   applicable_models:
   - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_0008
+  category: Operating Mode
   state_name: SMS_MODE
-  description: SMS send/receive
+  description: Module is ready to send/receive SMS in text or PDU mode.
   entry_conditions:
-  - CMGF set or CMGS
+  - REGISTERED reached
+  - AT+CMGF=1 (text mode) or AT+CMGF=0 (PDU mode)
   exit_conditions:
-  - Session complete
+  - AT+CMGF=0/1 toggled
   events:
   - +CMTI
-  - +CMGS
+  - +CMT
+  - +CDS
   actions:
-  - Read/send SMS
+  - Send SMS (AT+CMGS)
+  - Receive SMS
+  related_commands:
+  - AT+CMGF
+  - AT+CMGS
+  - AT+CMGR
+  related_urcs:
+  - +CMTI
+  - +CMT
+  - +CDS
+  related_timings: []
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 4.2.5
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '27'
+    section: 4.3.3. Wake Up SIM800H&SIM800L from Sleep Mode 1
+    quote: In sleep mode, the module can still receive paging or SMS from network.
+  source_type: primary
+  confidence: 0.45
+  status: inferred
+  conflicts: []
+  notes: SMS_MODE is not a distinct operating mode in V2.02; inferred from sleep/paging
+    notes (sections 4.3.3 and 2.3 GSM IDLE) plus standard SIM800 SMS semantics. Cross-reference
+    with dat_09.
   tags:
   - state
-- id: dat_05_0010
-  source_type: primary
+  - sms
   applicable_models:
   - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_0009
+  category: Operating Mode
   state_name: CALL_MODE
-  description: Voice/data/fax call
+  description: A voice call is in progress. Corresponds to GSM TALK in V2.02.
   entry_conditions:
-  - ATD or ATA
+  - REGISTERED reached
+  - ATD<number> to initiate or RING to accept
   exit_conditions:
-  - ATH or NO CARRIER
+  - ATH to hang up
+  - Call ends (NO CARRIER)
   events:
   - RING
-  - CONNECT
+  - NO CARRIER
+  - +CLIP
   actions:
-  - Manage via CHLD
+  - Route audio to speaker/mic
+  - Report caller ID URC
+  related_commands:
+  - ATD
+  - ATH
+  - ATA
+  related_urcs:
+  - RING
+  - NO CARRIER
+  - +CLIP
+  related_timings: []
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 2.2.2
-  confidence: 0.85
-  status: complete
-  notes: ''
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: 2.3. Operating Mode / GSM TALK
+    quote: 'GSM TALK: Normal Connection between two subscribers is in progress. In
+      this case, the power consumption depends on network settings such as DTX off/on,
+      FR/EFR/HR, hopping sequences, antenna.'
+  source_type: primary
+  confidence: 0.7
+  status: partial
+  conflicts: []
+  notes: RI behaviors during voice call are documented in V2.02 section 4.6 (RI Behaviors),
+    see Figure 27.
   tags:
   - state
-- id: dat_05_0011
-  source_type: primary
+  - call
   applicable_models:
   - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_0010
+  category: Operating Mode
+  state_name: SLEEP
+  description: Module in sleep mode (1 or 2) to minimise current consumption. UART
+    not accessible in sleep mode 1 (until DTR pulled low). Corresponds to SLEEP in
+    V2.02 Table 4.
+  entry_conditions:
+  - AT+CSCLK=1 and DTR high and no interrupt (Sleep Mode 1)
+  - AT+CSCLK=2 and no data over 5 seconds on RXD (Sleep Mode 2)
+  exit_conditions:
+  - DTR pulled low for about 50 ms (Sleep Mode 1)
+  - Data on main serial port (Sleep Mode 2)
+  - Incoming voice/data call
+  - Incoming SMS
+  - External interrupt
+  events: []
+  actions:
+  - Receive paging
+  - Receive SMS
+  related_commands:
+  - AT+CSCLK
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: 2.3. Operating Mode / SLEEP + 4.3.2 + 4.3.4
+    quote: Module will automatically go into sleep mode if the conditions of sleep
+      mode are enabling and there is no on air and no hardware interrupt (such as
+      GPIO interrupt or data on serial port).
+  source_type: primary
+  confidence: 0.8
+  status: partial
+  conflicts: []
+  notes: Sleep Mode 1 (DTR-controlled) and Sleep Mode 2 (RXD-based) are described
+    in sections 4.3.2 and 4.3.4. Wake-up conditions in 4.3.3 and 4.3.5.
+  tags:
+  - state
+  - sleep
+  - power
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_0011
+  category: Operating Mode
+  state_name: CHARGE
+  description: The SIM800L module does not charge a battery. The VRTC pin supports
+    only RTC backup via an external capacitor or battery.
+  entry_conditions:
+  - VRTC connected to external capacitor or battery
+  - VBAT present (charging side) or absent (backup side)
+  exit_conditions:
+  - VRTC disconnected
+  events: []
+  actions:
+  - Maintain RTC while VBAT off
+  related_commands: []
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '27'
+    section: 4.4. RTC Backup
+    quote: The RTC power supply of module can be provided by an external capacitor
+      or a battery (non-chargeable or rechargeable) through the VRTC.
+  source_type: primary
+  confidence: 0.3
+  status: inferred
+  conflicts: []
+  notes: CHARGE is defined in the brief but V2.02 does not document a battery-charging
+    state. Only RTC backup is documented (section 4.4). If the project requires battery
+    charging, SIM800L does not provide it. Consider marking this state as 'not-applicable'
+    in future revisions.
+  tags:
+  - state
+  - rtc
+  - inferred
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_0012
+  category: Operating Mode
+  state_name: ERROR
+  description: Module state after abnormal power down (over/under-voltage) or thermal
+    shutdown.
+  entry_conditions:
+  - VBAT < 3.4V (under-voltage)
+  - VBAT > 4.4V (over-voltage)
+  - Temperature > +85 C or < -40 C
+  exit_conditions:
+  - PWRKEY cycling
+  - Automatic restart once condition cleared
+  events:
+  - UNDER-VOLTAGE WARNNING
+  - OVER-VOLTAGE WARNNING
+  - UNDER-VOLTAGE POWER DOWN
+  - OVER-VOLTAGE POWER DOWN
+  - '+CMTE: 2'
+  - +CMTE:-2
+  actions:
+  - Log off network
+  - Preserve RTC
+  related_commands:
+  - AT+CMTE
+  related_urcs:
+  - UNDER-VOLTAGE POWER DOWN
+  - OVER-VOLTAGE POWER DOWN
+  - +CMTE
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '24'
+    section: 4.2.2.3 Over-Voltage or Under-Voltage Power Down / 4.2.2.4 Over-Temperature
+      or Under-Temperature Power Down
+    quote: If the voltage < 3.4V, the following URC will be reported, and the module
+      will be automatically powered down.
+  source_type: primary
+  confidence: 0.75
+  status: partial
+  conflicts: []
+  notes: Temperature monitoring is disabled by default; AT+CMTE must be used to enable
+    temperature read.
+  tags:
+  - state
+  - error
+  - power
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-12T04:00:00Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9001
+  category: State
+  state_name: 'OFF'
+  description: Module off
+  entry_conditions:
+  - AT+CPOWD
+  exit_conditions:
+  - AT+CFUN=1
+  events: []
+  actions: []
+  related_commands:
+  - AT+CPOWD
+  - AT+CFUN=1
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '3'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: 4.2. Power on/off Scenarios.......................................................................................................22
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: source.name says 'AT Command Manual' but source.section says 'SIM800H&SIM800L_Hardware_Design
+      V2.02' — mixed source
+  - field: source.quote
+    reason: quote is a Table of Contents line, not body text
+  - field: source.date
+    reason: date 2013-09-15 does not match any known V2.02 or AT Manual V1.01 release
+  - field: notes
+    reason: previous notes said 'Inferred from AT command semantics' with no actual
+      inference
+  notes: Legacy record. Original id dat_05_0001. Renumbered to 9001. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9002
+  category: State
+  state_name: POWER_ON
+  description: Module powered on
+  entry_conditions: []
+  exit_conditions:
+  - AT+CFUN=1
+  events: []
+  actions: []
+  related_commands:
+  - AT+CFUN=1
+  related_urcs:
+  - RDY
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: source.name says 'AT Command Manual' but source.section says 'SIM800H&SIM800L_Hardware_Design
+      V2.02' — mixed source
+  - field: source.quote
+    reason: quote duplicated across records 0002..0009 and unrelated to declared state
+  - field: source.date
+    reason: date does not match any known V2.02 or AT Manual V1.01 release
+  notes: Legacy record. Original id dat_05_0002. Renumbered to 9002. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9003
+  category: State
+  state_name: SIM_READY
+  description: SIM initialized
+  entry_conditions:
+  - AT+CPIN?
+  exit_conditions:
+  - AT+CREG?
+  events: []
+  actions: []
+  related_commands:
+  - AT+CPIN?
+  - AT+CREG?
+  related_urcs:
+  - +CPIN
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source (AT Manual name vs V2.02 section)
+  - field: source.quote
+    reason: quote duplicated and unrelated to SIM_READY
+  notes: Legacy record. Original id dat_05_0003. Renumbered to 9003. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9004
+  category: State
+  state_name: NETWORK_SEARCH
+  description: Searching
+  entry_conditions:
+  - AT+COPS?
+  exit_conditions:
+  - AT+CREG=1
+  events: []
+  actions: []
+  related_commands:
+  - AT+COPS?
+  - AT+CREG=1
+  related_urcs:
+  - +CREG
+  - +CGREG
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source
+  - field: source.quote
+    reason: quote duplicated and unrelated to NETWORK_SEARCH
+  notes: Legacy record. Original id dat_05_0004. Renumbered to 9004. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9005
+  category: State
+  state_name: REGISTERED
+  description: Registered
+  entry_conditions:
+  - AT+CREG?
+  exit_conditions:
+  - AT+CGATT=1
+  events: []
+  actions: []
+  related_commands:
+  - AT+CREG?
+  - AT+CGATT=1
+  related_urcs:
+  - +CREG
+  - +CGREG
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source
+  - field: source.quote
+    reason: quote duplicated and unrelated to REGISTERED
+  notes: Legacy record. Original id dat_05_0005. Renumbered to 9005. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9006
+  category: State
+  state_name: PDP_ACTIVE
+  description: PDP context active
+  entry_conditions:
+  - AT+CGATT=1
+  exit_conditions:
+  - AT+CSTT
+  events: []
+  actions: []
+  related_commands:
+  - AT+CGATT=1
+  - AT+CSTT
+  related_urcs:
+  - '+PDP: DEACT'
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source
+  - field: source.quote
+    reason: quote duplicated and unrelated to PDP_ACTIVE
+  notes: Legacy record. Original id dat_05_0006. Renumbered to 9006. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9007
+  category: State
+  state_name: DATA_MODE
+  description: Data mode active
+  entry_conditions:
+  - AT+CIPSTART
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands:
+  - AT+CIPSTART
+  related_urcs:
+  - +CIPRXGET
+  - +CIPCLOSE
+  - +CIPSTATUS
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source
+  - field: source.quote
+    reason: quote duplicated and unrelated to DATA_MODE
+  notes: Legacy record. Original id dat_05_0007. Renumbered to 9007. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9008
+  category: State
+  state_name: SMS_MODE
+  description: SMS mode active
+  entry_conditions:
+  - AT+CMGF=1
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands:
+  - AT+CMGF=1
+  related_urcs:
+  - +CMTI
+  - +CMT
+  - +CDS
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source
+  - field: source.quote
+    reason: quote duplicated and unrelated to SMS_MODE
+  notes: Legacy record. Original id dat_05_0008. Renumbered to 9008. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9009
+  category: State
+  state_name: CALL_MODE
+  description: Call in progress
+  entry_conditions:
+  - ATD
+  exit_conditions:
+  - ATH
+  events: []
+  actions: []
+  related_commands:
+  - ATD
+  - ATH
+  related_urcs:
+  - RING
+  - NO CARRIER
+  - +CLIP
+  related_timings: []
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source
+  - field: source.quote
+    reason: quote duplicated and unrelated to CALL_MODE
+  notes: Legacy record. Original id dat_05_0009. Renumbered to 9009. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9010
   category: State
   state_name: SLEEP
-  description: Low power, UART not accessible
+  description: Sleep mode
   entry_conditions:
-  - CSCLK=1 + DTR high + no IRQ
+  - AT+CSCLK=1
   exit_conditions:
-  - DTR low, call, SMS, IRQ
-  events:
-  - DTR low
-  actions:
-  - Wait for wake
+  - AT+CSCLK=0
+  events: []
+  actions: []
+  related_commands:
+  - AT+CSCLK=1
+  - AT+CSCLK=0
+  related_urcs: []
+  related_timings: []
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 4.3.2
-  confidence: 0.85
-  status: complete
-  notes: ''
-  tags:
-  - state
-- id: dat_05_0012
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '3'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: 4.3.2. Sleep Mode 1 (AT+CSCLK=1)..........................................................................................................27
   source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source (AT Manual name vs V2.02 section)
+  - field: source.quote
+    reason: quote is a Table of Contents line, not body text
+  notes: Legacy record. Original id dat_05_0010. Renumbered to 9010. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
   applicable_models:
   - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
-  state_name: MINIMUM_FUNCTIONALITY
-  description: RF and/or SIM disabled
-  entry_conditions:
-  - CFUN=0 or CFUN=4
-  exit_conditions:
-  - CFUN=1
-  events:
-  - '+CFUN: 0'
-  - '+CFUN: 4'
-  actions:
-  - Minimize current
-  source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 4.3.1
-  confidence: 0.85
-  status: complete
-  notes: ''
-  tags:
-  - state
-- id: dat_05_0013
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
-  category: State
-  state_name: CHARGE
-  description: Charger connected (HW support)
-  entry_conditions:
-  - VBUS + charge circuit
-  exit_conditions:
-  - Charger removed
-  events:
-  - +CBC charging
-  actions:
-  - Monitor via CBC
-  source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 3.2.56
-  confidence: 0.85
-  status: complete
-  notes: ''
-  tags:
-  - state
-- id: dat_05_0014
-  source_type: primary
-  applicable_models:
-  - SIM800L
-  created_at: '2026-10-13T18:03:06Z'
-  updated_at: '2026-10-13T18:03:06Z'
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_9011
   category: State
   state_name: ERROR
-  description: Fatal voltage/temperature condition
-  entry_conditions:
-  - Voltage or temp out of range
-  exit_conditions:
-  - Power cycle
-  events:
-  - OVER-VOLTAGE POWER DOWN
-  - UNDER-VOLTAGE POWER DOWN
-  actions:
-  - Power cycle
+  description: Error state
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands:
+  - AT+CFUN=1,1
+  related_urcs:
+  - +POWER DOWN
+  related_timings: []
   source:
-    name: SIM800L_Hardware_Design_V1.00
-    version: V1.00
-    date: '2013-08-20'
-    section: 4.2.2.3
-  confidence: 0.85
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '23'
+    section: SIM800H&SIM800L_Hardware_Design V2.02
+    quote: This procedure makes the module log off from the network and allows the
+      software to enter into a secure state to
+  source_type: primary
+  confidence: 0.0
+  status: unknown
+  conflicts:
+  - field: coverage_estimate
+    reason: field removed; not defined in dat_05 schema
+  - field: source
+    reason: mixed source
+  - field: source.quote
+    reason: quote duplicated and unrelated to ERROR state
+  notes: Legacy record. Original id dat_05_0011. Renumbered to 9011. Preserved per
+    R10. See D-044.
+  tags:
+  - legacy
+  - deprecated
+  - malformed
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-12T04:00:00Z'
+- id: dat_05_0013
+  category: OperatingMode
+  state_name: SLEEP
+  description: Module automatically enters sleep mode if enabled and no on-air or
+    hardware interrupt. Current reduced to minimum.
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands: []
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: Table 4 Overview of operating modes
+    quote: ''
+  source_type: primary
+  confidence: 0.92
   status: complete
-  notes: ''
+  conflicts: []
+  notes: State documented in V2.02 Table 4.
+  applicable_models:
+  - SIM800L
   tags:
   - state
+  - sleep
+  created_at: '2026-10-12T00:00:00Z'
+  updated_at: '2026-10-12T00:00:00Z'
+- id: dat_05_0014
+  category: OperatingMode
+  state_name: GSM_IDLE
+  description: GSM software active; module registered to GSM network; ready to communicate.
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands: []
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: Table 4 Overview of operating modes
+    quote: ''
+  source_type: primary
+  confidence: 0.92
+  status: complete
+  conflicts: []
+  notes: State documented in V2.02 Table 4.
+  applicable_models:
+  - SIM800L
+  tags:
+  - state
+  - gsm_idle
+  created_at: '2026-10-12T00:00:00Z'
+  updated_at: '2026-10-12T00:00:00Z'
+- id: dat_05_0015
+  category: OperatingMode
+  state_name: GSM_TALK
+  description: Connection between two subscribers in progress; power depends on network
+    settings.
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands: []
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: Table 4 Overview of operating modes
+    quote: ''
+  source_type: primary
+  confidence: 0.92
+  status: complete
+  conflicts: []
+  notes: State documented in V2.02 Table 4.
+  applicable_models:
+  - SIM800L
+  tags:
+  - state
+  - gsm_talk
+  created_at: '2026-10-12T00:00:00Z'
+  updated_at: '2026-10-12T00:00:00Z'
+- id: dat_05_0016
+  category: OperatingMode
+  state_name: GPRS_STANDBY
+  description: Module ready for GPRS data transfer but no data currently sent/received.
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands: []
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: Table 4 Overview of operating modes
+    quote: ''
+  source_type: primary
+  confidence: 0.92
+  status: complete
+  conflicts: []
+  notes: State documented in V2.02 Table 4.
+  applicable_models:
+  - SIM800L
+  tags:
+  - state
+  - gprs_standby
+  created_at: '2026-10-12T00:00:00Z'
+  updated_at: '2026-10-12T00:00:00Z'
+- id: dat_05_0017
+  category: OperatingMode
+  state_name: GPRS_DATA
+  description: GPRS data transfer (PPP/TCP/UDP) in progress.
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands: []
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: Table 4 Overview of operating modes
+    quote: ''
+  source_type: primary
+  confidence: 0.92
+  status: complete
+  conflicts: []
+  notes: State documented in V2.02 Table 4.
+  applicable_models:
+  - SIM800L
+  tags:
+  - state
+  - gprs_data
+  created_at: '2026-10-12T00:00:00Z'
+  updated_at: '2026-10-12T00:00:00Z'
+- id: dat_05_0018
+  category: OperatingMode
+  state_name: POWER_DOWN
+  description: Normal power down via AT+CPOWD=1 or PWRKEY; only RTC remains.
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands: []
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: Table 4 Overview of operating modes
+    quote: ''
+  source_type: primary
+  confidence: 0.92
+  status: complete
+  conflicts: []
+  notes: State documented in V2.02 Table 4.
+  applicable_models:
+  - SIM800L
+  tags:
+  - state
+  - power_down
+  created_at: '2026-10-12T00:00:00Z'
+  updated_at: '2026-10-12T00:00:00Z'
+- id: dat_05_0019
+  category: OperatingMode
+  state_name: MIN_FUNC
+  description: Minimum functionality via AT+CFUN=0; RF off; SIM inaccessible; serial
+    still accessible.
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands: []
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: Table 4 Overview of operating modes
+    quote: ''
+  source_type: primary
+  confidence: 0.92
+  status: complete
+  conflicts: []
+  notes: State documented in V2.02 Table 4.
+  applicable_models:
+  - SIM800L
+  tags:
+  - state
+  - min_func
+  created_at: '2026-10-12T00:00:00Z'
+  updated_at: '2026-10-12T00:00:00Z'
+- id: dat_05_0020
+  category: OperatingMode
+  state_name: GPRS_ATTACHED
+  description: GPRS attached to network; PDP context not yet active.
+  entry_conditions: []
+  exit_conditions: []
+  events: []
+  actions: []
+  related_commands:
+  - AT+CGATT
+  related_urcs: []
+  related_timings: []
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '13'
+    section: Table 4 Overview of operating modes
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: Intermediate state between REGISTERED and PDP_ACTIVE.
+  applicable_models:
+  - SIM800L
+  tags:
+  - state
+  - gprs
+  created_at: '2026-10-12T00:00:00Z'
+  updated_at: '2026-10-12T00:00:00Z'

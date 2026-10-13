@@ -1,6 +1,18 @@
-# Changelog — sim800l-data
+# Changelog (reports)
 
-## [2026-10-13T18:11:10Z]
-- v6-final: fixed PowerShell .Count bug, dat_01 AT-prefix dedup, dat_15 2-field dedup, coverage > 100% rule.
-- validate.py exit=0; cross_ref.py exit=0
-- Final: complete=8 partial=4 blocked=5 deferred=1
+## [Unreleased] - 2026-10-13T18:55:14Z
+
+### Added
+- Classified cross-reference report (pending_blocked / format_mismatch / real_missing).
+- Coverage matrix with per-dataset coverage, estimate, source, reason.
+- Consistency report (R20) across shared command keys.
+- SOURCE_INVENTORY.md with full inventory of available and missing sources.
+
+### Fixed
+- ISO 8601 UTC timestamp for backup folder names (previous Jalali format).
+- Nullable optional fields in schema (validated 0 errors).
+- Deterministic IDs (SHA-1 of record content).
+
+### Changed
+- Blocked datasets (dat_08, dat_16, dat_18) marked explicitly.
+- Per-dataset category (semantic, not "dat_XX").

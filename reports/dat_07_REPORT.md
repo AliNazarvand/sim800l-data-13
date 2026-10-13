@@ -1,17 +1,12 @@
-# dat_07 — Hardware Reference
+# dat_07 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 77
+- Empty name: 0
+- Empty pin_number: 0
+- Duplicate (name,pin): 0
+- Duplicate id: 0
+- Status: partial
+- Coverage estimate: high
+- Source: SIM800H&SIM800L Hardware Design V2.02
 
-| Field | Value |
-|-------|-------|
-| Status | complete |
-| Real records | 78 |
-| Unique records | 78 |
-| Total records | 78 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | source available; coverage/threshold met |
-
-## Notes
-Dataset complete per R12 (coverage in [95%, 100%] or threshold met).
+Dedup pass executed at 2026-10-13T18:59:05Z. See reports/_archive/_dat07_removed_ids.json.

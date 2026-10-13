@@ -1,144 +1,39 @@
-$schema: http://json-schema.org/draft-07/schema#
-title: dat_05
+$schema: "http://json-schema.org/draft-07/schema#"
+title: "dat_05"
 type: object
-required:
-- id
-- category
-- source
-- source_type
-- confidence
-- status
-- applicable_models
-- created_at
-- updated_at
+required: [id, category, source, source_type, confidence, status, applicable_models]
 properties:
-  id:
-    type: string
-    pattern: ^dat_05_[0-9]{4}$
-  category:
-    type: string
+  id: {type: string}
+  category: {type: string}
   source:
     type: object
-    required:
-    - name
-    - version
+    required: [name, version, date]
     properties:
-      name:
-        type: string
-      version:
-        type: string
-      date:
-        type:
-        - string
-        - 'null'
-        format: date
-      page:
-        type:
-        - string
-        - 'null'
-      section:
-        type:
-        - string
-        - 'null'
-      quote:
-        type:
-        - string
-        - 'null'
-  source_type:
-    type: string
-    enum:
-    - primary
-    - secondary
-    - external
-  confidence:
-    type: number
-    minimum: 0.0
-    maximum: 1.0
-  status:
-    type: string
-    enum:
-    - complete
-    - partial
-    - unknown
-    - inferred
-    - blocked
-    - deferred
-    - example-only
-  conflicts:
-    type:
-    - array
-    - 'null'
-    items:
-      type: object
-  notes:
-    type:
-    - string
-    - 'null'
-  tags:
-    type:
-    - array
-    - 'null'
-    items:
-      type: string
+      name: {type: string}
+      version: {type: string}
+      date: {type: string}
+      page: {type: [string, "null"]}
+      section: {type: [string, "null"]}
+      quote: {type: [string, "null"]}
+      notes: {type: [string, "null"]}
+  source_type: {type: string, enum: [primary, secondary, external]}
+  confidence: {type: number, minimum: 0.0, maximum: 1.0}
+  status: {type: string, enum: [complete, partial, unknown, inferred, blocked, deferred]}
+  conflicts: {type: [array, "null"]}
+  notes: {type: [string, "null"]}
+  tags: {type: [array, "null"]}
   applicable_models:
     type: array
-    items:
-      type: string
-    contains:
-      const: SIM800L
-  created_at:
-    type: string
-    format: date-time
-  updated_at:
-    type: string
-    format: date-time
-  state_name:
-    type:
-    - string
-    - 'null'
-  description:
-    type:
-    - string
-    - 'null'
-  entry_conditions:
-    type:
-    - array
-    - 'null'
-    items:
-      type: string
-  exit_conditions:
-    type:
-    - array
-    - 'null'
-    items:
-      type: string
-  events:
-    type:
-    - array
-    - 'null'
-    items:
-      type: string
-  actions:
-    type:
-    - array
-    - 'null'
-    items:
-      type: string
-  related_commands:
-    type:
-    - array
-    - 'null'
-    items:
-      type: string
-  related_urcs:
-    type:
-    - array
-    - 'null'
-    items:
-      type: string
-  related_timings:
-    type:
-    - array
-    - 'null'
-    items:
-      type: string
+    items: {type: string}
+    contains: {const: "SIM800L"}
+  created_at: {type: [string, "null"]}
+  updated_at: {type: [string, "null"]}
+  state_name: {type: [string, "null"]}
+  description: {type: [string, "null"]}
+  entry_conditions: {type: [array, "null"], items: {type: string}}
+  exit_conditions: {type: [array, "null"], items: {type: string}}
+  events: {type: [array, "null"], items: {type: string}}
+  actions: {type: [array, "null"], items: {type: string}}
+  related_commands: {type: [array, "null"], items: {type: string}}
+  related_urcs: {type: [array, "null"], items: {type: string}}
+  related_timings: {type: [array, "null"], items: {type: string}}

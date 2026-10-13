@@ -1,17 +1,10 @@
-# dat_03 — Error Code
+# dat_03 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 255
+- Status: partial
+- Coverage: —
+- Coverage estimate: high
+- Source: SIM800 Series AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | blocked |
-| Real records | 0 |
-| Unique records | 0 |
-| Total records | 1 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | required source document is not available |
-
-## Notes
-Dataset blocked; required source not available. See TODO.md.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

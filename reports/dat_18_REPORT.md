@@ -1,17 +1,10 @@
-# dat_18 — Certification
+# dat_18 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 1
+- Status: blocked
+- Coverage: —
+- Coverage estimate: low
+- Source: (source unavailable)
+- Reason: Certification documents not available in sources/
 
-| Field | Value |
-|-------|-------|
-| Status | blocked |
-| Real records | 1 |
-| Unique records | 1 |
-| Total records | 1 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | required source document is not available |
-
-## Notes
-Dataset blocked; required source not available. See TODO.md.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

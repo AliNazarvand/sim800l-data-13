@@ -1,17 +1,10 @@
-# dat_05 — State Machine
+# dat_05 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 31
+- Status: partial
+- Coverage: —
+- Coverage estimate: medium
+- Source: SIM800 Series AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | partial |
-| Real records | 14 |
-| Unique records | 14 |
-| Total records | 14 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | insufficient coverage or below threshold |
-
-## Notes
-Dataset partial; see Reason above and TODO.md.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

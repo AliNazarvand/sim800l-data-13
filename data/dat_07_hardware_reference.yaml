@@ -1,2708 +1,60 @@
 - id: dat_07_0001
-  category: SIM
-  name: C1
-  pin_number: C1
-  direction: unknown
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: Power supply
+  pin_number: Power supply
+  direction: ''
   voltage_min: null
   voltage_typ: null
   voltage_max: null
   current_typ: null
   current_max: null
-  function: SIM card power supply
+  function: ''
   alternate_function: null
   pull_up_down: null
   esd_rating: null
   impedance: null
   decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p040_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
 - id: dat_07_0002
-  category: SIM
-  name: C2
-  pin_number: C2
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: SIM card reset
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
   source:
     name: SIM800H&SIM800L_Hardware_Design
     version: V2.02
     date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p040_t01.csv
+    page: '16'
+    section: ''
+    quote: ''
   source_type: primary
-  confidence: 0.7
-  status: partial
+  confidence: 0.9
+  status: complete
   conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0003
-  category: SIM
-  name: C3
-  pin_number: C3
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: SIM card clock
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p040_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0004
-  category: Unclassified
-  name: C4
-  pin_number: C4
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Connect to GND
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p040_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0005
-  category: Unclassified
-  name: C5
-  pin_number: C5
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Connect to GND
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p040_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0006
-  category: Unclassified
-  name: C6
-  pin_number: C6
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Not connect
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p040_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0007
-  category: SIM
-  name: C7
-  pin_number: C7
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: SIM card data I/O
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p040_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0008
-  category: SIM
-  name: C8
-  pin_number: C8
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Detect SIM card presence
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p040_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0009
-  category: Unclassified
-  name: COL0
-  pin_number: COL0
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0010
-  category: Unclassified
-  name: COL1
-  pin_number: COL1
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0011
-  category: Unclassified
-  name: COL2
-  pin_number: COL2
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0012
-  category: Unclassified
-  name: COL3
-  pin_number: COL3
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0013
-  category: Unclassified
-  name: COL4
-  pin_number: COL4
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0014
-  category: UART
-  name: CTS
-  pin_number: CTS
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Request to send
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0015
-  category: UART
-  name: DCD
-  pin_number: DCD
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Data carrier detect
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0016
-  category: UART
-  name: DTR
-  pin_number: DTR
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Data terminal ready
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0017
-  category: GPIO
-  name: GPIO1
-  pin_number: GPIO1
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p047_t02.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - gpio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0018
-  category: GPIO
-  name: GPIO2
-  pin_number: GPIO2
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p042_t03.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - gpio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0019
-  category: GPIO
-  name: GPIO3
-  pin_number: GPIO3
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p042_t03.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - gpio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0020
-  category: Unclassified
-  name: ISINK0
-  pin_number: ISINK0
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Sink current for LCM module
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p050_t04.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0021
-  category: Unclassified
-  name: ISINK1
-  pin_number: ISINK1
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Sink current for keypad LED
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p050_t04.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0022
-  category: Unclassified
-  name: KBC0
-  pin_number: KBC0
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0023
-  category: Unclassified
-  name: KBC1
-  pin_number: KBC1
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0024
-  category: Unclassified
-  name: KBC2
-  pin_number: KBC2
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0025
-  category: Unclassified
-  name: KBC3
-  pin_number: KBC3
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0026
-  category: Unclassified
-  name: KBC4
-  pin_number: KBC4
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0027
-  category: Unclassified
-  name: KBR0
-  pin_number: KBR0
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p046_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0028
-  category: Unclassified
-  name: KBR1
-  pin_number: KBR1
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p046_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0029
-  category: Unclassified
-  name: KBR2
-  pin_number: KBR2
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p046_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0030
-  category: Unclassified
-  name: KBR3
-  pin_number: KBR3
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0031
-  category: Unclassified
-  name: KBR4
-  pin_number: KBR4
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0032
-  category: Audio
-  name: MIC1N
-  pin_number: MIC1N
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - audio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0033
-  category: Audio
-  name: MIC1P
-  pin_number: MIC1P
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - audio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0034
-  category: Audio
-  name: MIC2N
-  pin_number: MIC2N
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - audio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0035
-  category: Audio
-  name: MIC2P
-  pin_number: MIC2P
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - audio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0036
-  category: NETLIGHT
-  name: NETLIGHT
-  pin_number: NETLIGHT
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p069_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - netlight
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0037
-  category: Unclassified
-  name: PCMCLK
-  pin_number: PCMCLK
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0038
-  category: Unclassified
-  name: PCMIN
-  pin_number: PCMIN
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
+  notes: ''
   tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0039
-  category: Unclassified
-  name: PCMOUT
-  pin_number: PCMOUT
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0040
-  category: Unclassified
-  name: PCMSYNC
-  pin_number: PCMSYNC
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0041
-  category: Unclassified
-  name: PCM_CLK
-  pin_number: PCM_CLK
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0042
-  category: Unclassified
-  name: PCM_IN
-  pin_number: PCM_IN
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0043
-  category: Unclassified
-  name: PCM_OUT
-  pin_number: PCM_OUT
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0044
-  category: Unclassified
-  name: PCM_SYNC
-  pin_number: PCM_SYNC
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0045
-  category: PWM
-  name: PWM
-  pin_number: PWM
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p069_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - pwm
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0046
-  category: PWRKEY
-  name: PWRKEY
-  pin_number: PWRKEY
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p063_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - pwrkey
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0047
-  category: UART
-  name: RI
-  pin_number: RI
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Ring indicator
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0048
-  category: Unclassified
-  name: ROW0
-  pin_number: ROW0
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p047_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0049
-  category: Unclassified
-  name: ROW1
-  pin_number: ROW1
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p047_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0050
-  category: Unclassified
-  name: ROW2
-  pin_number: ROW2
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p047_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0051
-  category: Unclassified
-  name: ROW3
-  pin_number: ROW3
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0052
-  category: Unclassified
-  name: ROW4
-  pin_number: ROW4
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0053
-  category: UART
-  name: RTS
-  pin_number: RTS
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Clear to send
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0054
-  category: UART
-  name: RXD
-  pin_number: RXD
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Receive data
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0055
-  category: Unclassified
-  name: SCL
-  pin_number: SCL
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: I2C serial bus clock(open drain output)
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p046_t03.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0056
-  category: Unclassified
-  name: SDA
-  pin_number: SDA
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: I2C serial bus data(open drain output)
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p046_t03.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0057
-  category: SIM
-  name: SIMPRE
-  pin_number: SIMPRE
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p066_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0058
-  category: SIM
-  name: SIM_CLK
-  pin_number: SIM_CLK
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: SIM clock
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p038_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0059
-  category: SIM
-  name: SIM_DATA
-  pin_number: SIM_DATA
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: SIM data input/output
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p038_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0060
-  category: SIM
-  name: SIM_DET
-  pin_number: SIM_DET
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: SIM card detection
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p038_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0061
-  category: SIM
-  name: SIM_PRE
-  pin_number: SIM_PRE
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: SIM card detection
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p039_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0062
-  category: SIM
-  name: SIM_RST
-  pin_number: SIM_RST
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: SIM reset
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p038_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0063
-  category: Power
-  name: SIM_VDD
-  pin_number: SIM_VDD
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Voltage supply for SIM card. Support 1.8V or 3V SIM card
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p038_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - power
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0064
-  category: Audio
-  name: SPK1N
-  pin_number: SPK1N
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - audio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0065
-  category: Audio
-  name: SPK1P
-  pin_number: SPK1P
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - audio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0066
-  category: Audio
-  name: SPK2N
-  pin_number: SPK2N
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
+  - auto-extracted
   applicable_models:
   - SIM800L
-  tags:
-  - hardware
-  - pin
-  - audio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0067
-  category: Audio
-  name: SPK2P
-  pin_number: SPK2P
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - audio
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0068
-  category: STATUS
-  name: STATUS
-  pin_number: STATUS
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p069_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - status
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0069
-  category: UART
-  name: TXD
-  pin_number: TXD
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Transmit data
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0070
-  category: UART
-  name: UART_DCD
-  pin_number: UART_DCD
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Data carrier detect
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0071
-  category: UART
-  name: UART_DTR
-  pin_number: UART_DTR
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Data terminal ready
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0072
-  category: UART
-  name: UART_RI
-  pin_number: UART_RI
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: Ring indicator
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - uart
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0073
-  category: USB
-  name: USB_DM
-  pin_number: USB_DM
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800L_Hardware_Design
-    version: V1.00
-    date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - usb
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0074
-  category: USB
-  name: USB_DN
-  pin_number: USB_DN
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - usb
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0075
-  category: USB
-  name: USB_DP
-  pin_number: USB_DP
-  direction: unknown
-  voltage_min: null
-  voltage_typ: null
-  voltage_max: null
-  current_typ: null
-  current_max: null
-  function: unknown
-  alternate_function: null
-  pull_up_down: null
-  esd_rating: null
-  impedance: null
-  decoupling: null
-  source:
-    name: SIM800H&SIM800L_Hardware_Design
-    version: V2.02
-    date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
-  source_type: primary
-  confidence: 0.7
-  status: partial
-  conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
-  applicable_models:
-  - SIM800L
-  tags:
-  - hardware
-  - pin
-  - usb
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0076
-  category: Power
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
   name: VBAT
   pin_number: VBAT
-  direction: unknown
+  direction: I
   voltage_min: null
   voltage_typ: null
   voltage_max: null
@@ -2714,31 +66,1049 @@
   esd_rating: null
   impedance: null
   decoupling: null
+- id: dat_07_0003
   source:
     name: SIM800H&SIM800L_Hardware_Design
     version: V2.02
     date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p016_t01.csv
+    page: '16'
+    section: ''
+    quote: ''
   source_type: primary
-  confidence: 0.7
-  status: partial
+  confidence: 0.9
+  status: complete
   conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
+  notes: ''
+  tags:
+  - auto-extracted
   applicable_models:
   - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: Power on/down
+  pin_number: Power on/down
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0004
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
   tags:
-  - hardware
-  - pin
-  - power
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0077
-  category: Unclassified
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: Audio interfaces
+  pin_number: Audio interfaces
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0005
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: MIC1P
+  pin_number: MIC1P
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Main Audio input positive
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0006
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: MIC1N
+  pin_number: MIC1N
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Main Audio input negative
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0007
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SPK1P
+  pin_number: SPK1P
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Main Audio output positive
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0008
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SPK1N
+  pin_number: SPK1N
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Main Audio output negative
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0009
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: MIC2P
+  pin_number: MIC2P
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Secondary Audio input positive
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0010
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: MIC2N
+  pin_number: MIC2N
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Secondary Audio input negative
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0011
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SPK2P
+  pin_number: SPK2P
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Secondary Audio output positive
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0012
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SPK2N
+  pin_number: SPK2N
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Secondary Audio output negative
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0013
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCM interface
+  pin_number: PCM interface
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0014
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCM_CLK
+  pin_number: PCM_CLK
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PCM clock
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0015
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCM_OUT
+  pin_number: PCM_OUT
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PCM data output
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0016
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCM_SYNC
+  pin_number: PCM_SYNC
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PCM synchrony
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0017
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCM_IN
+  pin_number: PCM_IN
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PCM data input
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0018
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: Keypads interface
+  pin_number: Keypads interface
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0019
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBC4
+  pin_number: KBC4
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0020
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBC3
+  pin_number: KBC3
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0021
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBC2
+  pin_number: KBC2
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0022
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBC1
+  pin_number: KBC1
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0023
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBC0
+  pin_number: KBC0
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0024
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBR4
+  pin_number: KBR4
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0025
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBR3
+  pin_number: KBR3
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0026
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: DTR
+  pin_number: DTR
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Data terminal ready
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0027
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: RI
+  pin_number: RI
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Ring indicator
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0028
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: DCD
+  pin_number: DCD
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Data carrier detect
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0029
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: CTS
+  pin_number: CTS
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Request to send
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0030
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: RTS
+  pin_number: RTS
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Clear to send
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0031
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: TXD
+  pin_number: TXD
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Transmit data
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0032
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: RXD
+  pin_number: RXD
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Receive data
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0033
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
   name: VBUS
   pin_number: VBUS
-  direction: unknown
+  direction: ''
   voltage_min: null
   voltage_typ: null
   voltage_max: null
@@ -2750,31 +1120,97 @@
   esd_rating: null
   impedance: null
   decoupling: null
+- id: dat_07_0034
   source:
     name: SIM800H&SIM800L_Hardware_Design
     version: V2.02
     date: '2015-07-27'
-    page: auto
-    section: Pin Description
-    quote: SIM800H&SIM800L_Hardware_Design_V2.02_p029_t01.csv
+    page: '29'
+    section: ''
+    quote: ''
   source_type: primary
-  confidence: 0.7
-  status: partial
+  confidence: 0.9
+  status: complete
   conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
+  notes: ''
+  tags:
+  - auto-extracted
   applicable_models:
   - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: USB_DP
+  pin_number: USB_DP
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0035
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
   tags:
-  - hardware
-  - pin
-  - unclassified
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
-- id: dat_07_0078
-  category: SIM
-  name: VSIM
-  pin_number: VSIM
-  direction: unknown
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: USB_DN
+  pin_number: USB_DN
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0044
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '38'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SIM_VDD
+  pin_number: SIM_VDD
+  direction: ''
   voltage_min: null
   voltage_typ: null
   voltage_max: null
@@ -2786,23 +1222,1397 @@
   esd_rating: null
   impedance: null
   decoupling: null
+- id: dat_07_0045
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '38'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SIM_DATA
+  pin_number: SIM_DATA
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: SIM data input/output
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0046
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '38'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SIM_CLK
+  pin_number: SIM_CLK
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: SIM clock
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0047
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '38'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SIM_RST
+  pin_number: SIM_RST
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: SIM reset
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0048
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '38'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SIM_DET
+  pin_number: SIM_DET
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: SIM card detection
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0057
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '42'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: GPIO2
+  pin_number: GPIO2
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0058
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '42'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: GPIO3
+  pin_number: GPIO3
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0064
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '46'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBR0
+  pin_number: KBR0
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0065
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '46'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBR1
+  pin_number: KBR1
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0066
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '46'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: KBR2
+  pin_number: KBR2
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0079
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '46'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SCL
+  pin_number: SCL
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: I2C serial bus clock(open drain output)
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0080
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '46'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SDA
+  pin_number: SDA
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: I2C serial bus data(open drain output)
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0083
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '47'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: GPIO1
+  pin_number: GPIO1
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0086
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '47'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: ADC
+  pin_number: ADC
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Analog voltage input
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0087
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '48'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PWM
+  pin_number: PWM
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PWM signal
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0089
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '49'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: NETLIGHT
+  pin_number: NETLIGHT
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Network Status Indication
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0091
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '50'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: STATUS
+  pin_number: STATUS
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Operating status indication
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0093
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '50'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: ISINK0
+  pin_number: ISINK0
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Sink current for LCM module
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0094
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '50'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: ISINK1
+  pin_number: ISINK1
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Sink current for keypad LED
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0095
+  source:
+    name: SIM800H&SIM800L_Hardware_Design
+    version: V2.02
+    date: '2015-07-27'
+    page: '51'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: RF_SYNC
+  pin_number: RF_SYNC
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Transmit synchronization signal
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0140
   source:
     name: SIM800L_Hardware_Design
     version: V1.00
     date: '2013-08-20'
-    page: auto
-    section: Pin Description
-    quote: SIM800L_Hardware_Design_V1.00_p039_t01.csv
+    page: '16'
+    section: ''
+    quote: ''
   source_type: primary
-  confidence: 0.7
-  status: partial
+  confidence: 0.9
+  status: complete
   conflicts: []
-  notes: Auto-extracted from pin table. Needs manual verification of direction/voltage/current and pin_number.
+  notes: ''
+  tags:
+  - auto-extracted
   applicable_models:
   - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCMCLK
+  pin_number: PCMCLK
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PCM clock
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0141
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
   tags:
-  - hardware
-  - pin
-  - sim
-  created_at: '2026-10-13T18:03:07Z'
-  updated_at: '2026-10-13T18:03:07Z'
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCMOUT
+  pin_number: PCMOUT
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PCM data output
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0142
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCMSYNC
+  pin_number: PCMSYNC
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PCM synchrony
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0143
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: PCMIN
+  pin_number: PCMIN
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: PCM data input
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0145
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: COL4
+  pin_number: COL4
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0146
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: COL3
+  pin_number: COL3
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0147
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: COL2
+  pin_number: COL2
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0148
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: COL1
+  pin_number: COL1
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0149
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: COL0
+  pin_number: COL0
+  direction: I
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0150
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: ROW4
+  pin_number: ROW4
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0151
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '16'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: ROW3
+  pin_number: ROW3
+  direction: O
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0152
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: UART_DTR
+  pin_number: UART_DTR
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Data terminal ready
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0153
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: UART_RI
+  pin_number: UART_RI
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Ring indicator
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0154
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: UART_DCD
+  pin_number: UART_DCD
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Data carrier detect
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0161
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '29'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: USB_DM
+  pin_number: USB_DM
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0177
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '39'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: VSIM
+  pin_number: VSIM
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Voltage supply for SIM card. Support 1.8V or 3V SIM card
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0181
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '39'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SIM_PRE
+  pin_number: SIM_PRE
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: SIM card detection
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0197
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '47'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: ROW0
+  pin_number: ROW0
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0198
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '47'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: ROW1
+  pin_number: ROW1
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0199
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '47'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: ROW2
+  pin_number: ROW2
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0227
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '52'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: BPI_BUS1
+  pin_number: BPI_BUS1
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: Transmit synchronization signal
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null
+- id: dat_07_0229
+  source:
+    name: SIM800L_Hardware_Design
+    version: V1.00
+    date: '2013-08-20'
+    page: '66'
+    section: ''
+    quote: ''
+  source_type: primary
+  confidence: 0.9
+  status: complete
+  conflicts: []
+  notes: ''
+  tags:
+  - auto-extracted
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-13T13:16:37Z'
+  updated_at: '2026-10-13T13:16:37Z'
+  category: Hardware
+  name: SIMPRE
+  pin_number: SIMPRE
+  direction: ''
+  voltage_min: null
+  voltage_typ: null
+  voltage_max: null
+  current_typ: null
+  current_max: null
+  function: ''
+  alternate_function: null
+  pull_up_down: null
+  esd_rating: null
+  impedance: null
+  decoupling: null

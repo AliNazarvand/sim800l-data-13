@@ -15,3 +15,10 @@
   created_at: '2026-10-10T17:30:26Z'
   updated_at: '2026-10-10T17:30:26Z'
   coverage_estimate: low
+  certification_body: null
+  certificate_number: null
+  standard: null
+  country: null
+  date_issued: null
+  date_expiry: null
+  document_link: null

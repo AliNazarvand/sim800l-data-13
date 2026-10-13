@@ -1,17 +1,10 @@
-# dat_01 — AT Command
+# dat_01 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 335
+- Status: complete
+- Coverage: 100%
+- Coverage estimate: high
+- Source: SIM800 Series AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | complete |
-| Real records | 335 |
-| Unique records | 335 |
-| Total records | 335 |
-| Coverage percent | 100 |
-| Coverage estimate | high |
-| Source count | 335 |
-| Reason | source available; coverage/threshold met |
-
-## Notes
-Dataset complete per R12 (coverage in [95%, 100%] or threshold met).
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

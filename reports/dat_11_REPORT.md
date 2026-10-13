@@ -1,17 +1,10 @@
-# dat_11 — HTTP/FTP/SSL
+# dat_11 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 38
+- Status: partial
+- Coverage: —
+- Coverage estimate: medium
+- Source: SIM800 Series AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | partial |
-| Real records | 10 |
-| Unique records | 10 |
-| Total records | 11 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | insufficient coverage or below threshold |
-
-## Notes
-Dataset partial; see Reason above and TODO.md.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

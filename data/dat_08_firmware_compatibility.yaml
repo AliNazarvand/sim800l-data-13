@@ -15,3 +15,12 @@
   created_at: '2026-10-10T17:30:26Z'
   updated_at: '2026-10-10T17:30:26Z'
   coverage_estimate: low
+  firmware_version: null
+  release_date: null
+  base_version: null
+  supported_commands: []
+  unsupported_commands: []
+  features: []
+  known_issues: []
+  fixed_issues: []
+  related_commands: []

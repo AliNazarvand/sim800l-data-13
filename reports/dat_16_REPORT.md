@@ -1,17 +1,10 @@
-# dat_16 — Board/EVB
+# dat_16 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 1
+- Status: blocked
+- Coverage: —
+- Coverage estimate: low
+- Source: (source unavailable)
+- Reason: Official EVB documentation not available in sources/
 
-| Field | Value |
-|-------|-------|
-| Status | deferred |
-| Real records | 1 |
-| Unique records | 1 |
-| Total records | 1 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | external source or owner discretion (per prompt spec) |
-
-## Notes
-Dataset deferred per prompt spec.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

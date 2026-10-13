@@ -1,17 +1,10 @@
-# dat_14 — Operator/APN
+# dat_14 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 52
+- Status: partial
+- Coverage: —
+- Coverage estimate: medium
+- Source: —
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | complete |
-| Real records | 52 |
-| Unique records | 52 |
-| Total records | 52 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | source available; coverage/threshold met |
-
-## Notes
-Dataset complete per R12 (coverage in [95%, 100%] or threshold met).
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

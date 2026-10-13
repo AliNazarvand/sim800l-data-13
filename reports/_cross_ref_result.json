@@ -1,504 +1,1308 @@
 {
-  "dat_01_commands": [
-    "+CAAS",
-    "+CACM",
-    "+CADC",
-    "+CALA",
-    "+CALD",
-    "+CALM",
-    "+CALS",
-    "+CALV",
-    "+CAMM",
-    "+CAOC",
-    "+CBAND",
-    "+CBC",
-    "+CBM",
-    "+CBPF",
-    "+CBST",
-    "+CBUZZER",
-    "+CBUZZERRING",
-    "+CCALR",
-    "+CCFC",
-    "+CCID",
-    "+CCLK",
-    "+CCODE",
-    "+CCPD",
-    "+CCVM",
-    "+CCWA",
-    "+CCWE",
-    "+CCWV",
-    "+CDEVICE",
-    "+CDNSCFG",
-    "+CDNSGIP",
-    "+CDRIND",
-    "+CDS",
-    "+CDSCB",
-    "+CEER",
-    "+CEMNL",
-    "+CENG",
-    "+CEXTBUT",
-    "+CEXTERN",
-    "+CEXTERNT",
-    "+CEXTERNTONE",
-    "+CEXTHS",
-    "+CFGRI",
-    "+CFUN",
-    "+CGACT",
-    "+CGATT",
-    "+CGCLASS",
-    "+CGDATA",
-    "+CGDCONT",
-    "+CGEREP",
-    "+CGID",
-    "+CGMI",
-    "+CGMM",
-    "+CGMR",
-    "+CGMSCLA",
-    "+CGMSCLASS",
-    "+CGPADDR",
-    "+CGQMIN",
-    "+CGQREQ",
-    "+CGREG",
-    "+CGSM",
-    "+CGSMS",
-    "+CGSN",
-    "+CHF",
-    "+CHFA",
-    "+CHLD",
-    "+CIFSR",
-    "+CIICR",
-    "+CIMI",
-    "+CIPACK",
-    "+CIPATS",
-    "+CIPCCFG",
-    "+CIPCLOSE",
-    "+CIPCSGP",
-    "+CIPCTL",
-    "+CIPDPDP",
-    "+CIPFLT",
-    "+CIPGSMLOC",
-    "+CIPHEAD",
-    "+CIPMODE",
-    "+CIPMUX",
-    "+CIPPING",
-    "+CIPQSEND",
-    "+CIPRDTIM",
-    "+CIPRDTIMER",
-    "+CIPRXGET",
-    "+CIPSCONT",
-    "+CIPSEND",
-    "+CIPSERVE",
-    "+CIPSERVER",
-    "+CIPSGTXT",
-    "+CIPSHOWTP",
-    "+CIPSHUT",
-    "+CIPSPRT",
-    "+CIPSRIP",
-    "+CIPSTART",
-    "+CIPSTATU",
-    "+CIPSTATUS",
-    "+CIPUDPMOD",
-    "+CIPUDPMODE",
-    "+CIURC",
-    "+CLCC",
-    "+CLCK",
-    "+CLDTMF",
-    "+CLIP",
-    "+CLIR",
-    "+CLPORT",
-    "+CLTS",
-    "+CLVL",
-    "+CME",
-    "+CMEE",
-    "+CMGD",
-    "+CMGDA",
-    "+CMGF",
-    "+CMGHEX",
-    "+CMGL",
-    "+CMGR",
-    "+CMGS",
-    "+CMGW",
-    "+CMIC",
-    "+CMICBIAS",
-    "+CMMSBCC",
-    "+CMMSCC",
-    "+CMMSCID",
-    "+CMMSCURL",
-    "+CMMSDELBC",
-    "+CMMSDELBCC",
-    "+CMMSDELCC",
-    "+CMMSDELFI",
-    "+CMMSDELFILE",
-    "+CMMSDELRE",
-    "+CMMSDELRECP",
-    "+CMMSDOWN",
-    "+CMMSEDIT",
-    "+CMMSINIT",
-    "+CMMSPROFI",
-    "+CMMSPROFILE",
-    "+CMMSPROTO",
-    "+CMMSRDPUS",
-    "+CMMSRDPUSH",
-    "+CMMSREAD",
-    "+CMMSRECP",
-    "+CMMSRECV",
-    "+CMMSSCONT",
-    "+CMMSSEND",
-    "+CMMSSENDC",
-    "+CMMSSENDCF",
-    "+CMMSSENDCFG",
-    "+CMMSSTATU",
-    "+CMMSSTATUS",
-    "+CMMSTERM",
-    "+CMMSTIMEO",
-    "+CMMSTIMEOUT",
-    "+CMMSUA",
-    "+CMMSVIEW",
-    "+CMOD",
-    "+CMS",
-    "+CMSS",
-    "+CMT",
-    "+CMTE",
-    "+CMTI",
-    "+CMUT",
-    "+CMUX",
-    "+CNETLIGH",
-    "+CNETLIGHT",
-    "+CNMI",
-    "+CNUM",
-    "+COLP",
-    "+COPN",
-    "+COPS",
-    "+CPAS",
-    "+CPBF",
-    "+CPBR",
-    "+CPBS",
-    "+CPBW",
-    "+CPIN",
-    "+CPMS",
-    "+CPOL",
-    "+CPOWD",
-    "+CPSPWD",
-    "+CPUC",
-    "+CPWD",
-    "+CR",
-    "+CRC",
-    "+CREC",
-    "+CREG",
-    "+CRES",
-    "+CRING",
-    "+CRLP",
-    "+CRSL",
-    "+CRSM",
-    "+CSAS",
-    "+CSCA",
-    "+CSCB",
-    "+CSCLK",
-    "+CSCS",
-    "+CSDH",
-    "+CSDT",
-    "+CSGS",
-    "+CSIM",
-    "+CSMINS",
-    "+CSMP",
-    "+CSMS",
-    "+CSNS",
-    "+CSPN",
-    "+CSQ",
-    "+CSQN",
-    "+CSSI",
-    "+CSSN",
-    "+CSSU",
-    "+CSTA",
-    "+CSTT",
-    "+CTTS",
-    "+CTTSPARAM",
-    "+CTZV",
-    "+CUSD",
-    "+CWHITELI",
-    "+CWHITELIST",
-    "+DDET",
-    "+DTMF",
-    "+ECHO",
-    "+EMAILCID",
-    "+EMAILTO",
-    "+EXUNSOL",
-    "+FCLASS",
-    "+FMI",
-    "+FMM",
-    "+FMR",
-    "+FTPCID",
-    "+FTPDELE",
-    "+FTPEXTPUT",
-    "+FTPGET",
-    "+FTPGETNA",
-    "+FTPGETNAME",
-    "+FTPGETPA",
-    "+FTPGETPATH",
-    "+FTPLIST",
-    "+FTPMKD",
-    "+FTPMOD",
-    "+FTPMODE",
-    "+FTPPORT",
-    "+FTPPUT",
-    "+FTPPUTNA",
-    "+FTPPUTNAME",
-    "+FTPPUTOP",
-    "+FTPPUTOPT",
-    "+FTPPUTPA",
-    "+FTPPUTPATH",
-    "+FTPPW",
-    "+FTPREST",
-    "+FTPRMD",
-    "+FTPSCONT",
-    "+FTPSERV",
-    "+FTPSIZE",
-    "+FTPSTATE",
-    "+FTPTIMEOUT",
-    "+FTPTYPE",
-    "+FTPUN",
-    "+FTSIZE",
-    "+GCAP",
-    "+GID",
-    "+GMI",
-    "+GMM",
-    "+GMR",
-    "+GOI",
-    "+GSMBUSY",
-    "+GSN",
-    "+GSV",
-    "+HTTPACTI",
-    "+HTTPACTIO",
-    "+HTTPACTION",
-    "+HTTPDATA",
-    "+HTTPINIT",
-    "+HTTPPARA",
-    "+HTTPREA",
-    "+HTTPREAD",
-    "+HTTPSCON",
-    "+HTTPSCONT",
-    "+HTTPSTAT",
-    "+HTTPSTATUS",
-    "+HTTPTER",
-    "+HTTPTERM",
-    "+HVOIC",
-    "+ICF",
-    "+IFC",
-    "+IPD",
-    "+IPR",
-    "+MORING",
-    "+PDP",
-    "+POP3CMD",
-    "+POP3DEL",
-    "+POP3IN",
-    "+POP3LIST",
-    "+POP3NUM",
-    "+POP3OUT",
-    "+POP3READ",
-    "+POP3REST",
-    "+POP3RSET",
-    "+POP3SRV",
-    "+POP3UIDL",
-    "+RECEIVE",
-    "+RECV",
-    "+SAPBR",
-    "+SCLASS0",
-    "+SGPIO",
-    "+SIDET",
-    "+SIMTONE",
-    "+SLEDS",
-    "+SMTPAUTH",
-    "+SMTPBODY",
-    "+SMTPCS",
-    "+SMTPFILE",
-    "+SMTPFROM",
-    "+SMTPFT",
-    "+SMTPRCPT",
-    "+SMTPSEND",
-    "+SMTPSRV",
-    "+SMTPSUB",
-    "+SPIC",
-    "+SPWM",
-    "+STKCALL",
-    "+STKDTMF",
-    "+STKENV",
-    "+STKENVS",
-    "+STKMENU",
-    "+STKPCI",
-    "+STKPCIS",
-    "+STKSMS",
-    "+STKSS",
-    "+STKTR",
-    "+STKTRS",
-    "+STKUSSD",
-    "+STTONE",
-    "+SVR",
-    "+VTD",
-    "+VTS"
-  ],
-  "refs": [
+  "findings": [
     {
-      "dataset": "dat_02",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "URC.related_command -> AT.command",
+      "status": "pending_blocked",
+      "total": 16,
+      "pending_blocked": 0,
+      "format_mismatch": 12,
+      "real_missing": 0,
+      "samples": {
+        "pending_blocked": [],
+        "format_mismatch": [
+          "AT+CGREG",
+          "AT+CIPRXGET",
+          "AT+CIPSTATUS",
+          "AT+CLIP",
+          "AT+CNMI",
+          "AT+CPIN",
+          "AT+CREG",
+          "AT+CUSD",
+          "AT+FTPGET",
+          "AT+FTPPUT"
+        ],
+        "real_missing": []
+      }
     },
     {
-      "dataset": "dat_03",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "URC.related_state -> State.state_name",
+      "status": "ok",
+      "total": 0
     },
     {
-      "dataset": "dat_04",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "ErrorCode.related_commands -> AT.command",
+      "status": "ok",
+      "total": 0
     },
     {
-      "dataset": "dat_05",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "Timing.related_command -> AT.command",
+      "status": "ok",
+      "total": 0
     },
     {
-      "dataset": "dat_06",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "Timing.related_state -> State.state_name",
+      "status": "ok",
+      "total": 4
     },
     {
-      "dataset": "dat_07",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "State.related_commands -> AT.command",
+      "status": "pending_blocked",
+      "total": 41,
+      "pending_blocked": 0,
+      "format_mismatch": 25,
+      "real_missing": 0,
+      "samples": {
+        "pending_blocked": [],
+        "format_mismatch": [
+          "AT+CCID",
+          "AT+CFUN=1",
+          "AT+CFUN=1,1",
+          "AT+CGACT",
+          "AT+CGATT",
+          "AT+CGATT=1",
+          "AT+CGDCONT",
+          "AT+CIMI",
+          "AT+CIPCLOSE",
+          "AT+CIPSEND"
+        ],
+        "real_missing": []
+      }
     },
     {
-      "dataset": "dat_08",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "Init.command -> AT.command",
+      "status": "pending_blocked",
+      "total": 28,
+      "pending_blocked": 0,
+      "format_mismatch": 19,
+      "real_missing": 0,
+      "samples": {
+        "pending_blocked": [],
+        "format_mismatch": [
+          "AT+CFUN=1",
+          "AT+CGACT=1,<cid>",
+          "AT+CGATT=1",
+          "AT+CGREG?",
+          "AT+CIFSR",
+          "AT+CIICR",
+          "AT+CIPSTART=\"TCP\",\"host\",port",
+          "AT+CIPSTART=<mode>,<IP>,<port>",
+          "AT+CMGF=1",
+          "AT+CPIN=<pin>"
+        ],
+        "real_missing": []
+      }
     },
     {
-      "dataset": "dat_09",
-      "total_refs": 14,
-      "resolved": 14,
-      "unresolved": 0
+      "rule": "Init.related_state -> State.state_name",
+      "status": "ok",
+      "total": 35
     },
     {
-      "dataset": "dat_10",
-      "total_refs": 21,
-      "resolved": 21,
-      "unresolved": 0
+      "rule": "SMS.command -> AT.command",
+      "status": "pending_blocked",
+      "total": 14,
+      "pending_blocked": 0,
+      "format_mismatch": 14,
+      "real_missing": 0,
+      "samples": {
+        "pending_blocked": [],
+        "format_mismatch": [
+          "AT+CMEE",
+          "AT+CMGD",
+          "AT+CMGF",
+          "AT+CMGL",
+          "AT+CMGR",
+          "AT+CMGS",
+          "AT+CMGW",
+          "AT+CNMI",
+          "AT+CPMS",
+          "AT+CSCA"
+        ],
+        "real_missing": []
+      }
     },
     {
-      "dataset": "dat_11",
-      "total_refs": 10,
-      "resolved": 10,
-      "unresolved": 0
+      "rule": "GPRS.command -> AT.command",
+      "status": "unresolved",
+      "total": 24,
+      "pending_blocked": 0,
+      "format_mismatch": 21,
+      "real_missing": 3,
+      "samples": {
+        "pending_blocked": [],
+        "format_mismatch": [
+          "AT+CDNSGIP",
+          "AT+CGACT",
+          "AT+CGATT",
+          "AT+CGDCONT",
+          "AT+CGPADDR",
+          "AT+CGREG",
+          "AT+CIFSR",
+          "AT+CIICR",
+          "AT+CIPCCFG",
+          "AT+CIPCLOSE"
+        ],
+        "real_missing": [
+          "AT+CEREG",
+          "AT+CGCONTRDP",
+          "AT+CIPDDREM"
+        ]
+      }
     },
     {
-      "dataset": "dat_12",
-      "total_refs": 7,
-      "resolved": 7,
-      "unresolved": 0
+      "rule": "HTTP/FTP/SSL.command -> AT.command",
+      "status": "unresolved",
+      "total": 38,
+      "pending_blocked": 0,
+      "format_mismatch": 19,
+      "real_missing": 19,
+      "samples": {
+        "pending_blocked": [],
+        "format_mismatch": [
+          "AT+FTPDELE",
+          "AT+FTPGET",
+          "AT+FTPGETPATH",
+          "AT+FTPLIST",
+          "AT+FTPMKD",
+          "AT+FTPMODE",
+          "AT+FTPPORT",
+          "AT+FTPPUT",
+          "AT+FTPPUTOPT",
+          "AT+FTPPUTPATH"
+        ],
+        "real_missing": [
+          "AT+FTPCLOSE",
+          "AT+FTPCWD",
+          "AT+FTPFLST",
+          "AT+FTPOPEN",
+          "AT+FTPPASS",
+          "AT+FTPPWD",
+          "AT+FTPUSER",
+          "AT+HTTPHEAD",
+          "AT+HTTPSSL",
+          "AT+HTTPURL"
+        ]
+      }
     },
     {
-      "dataset": "dat_13",
-      "total_refs": 10,
-      "resolved": 10,
-      "unresolved": 0
+      "rule": "Audio.command -> AT.command",
+      "status": "unresolved",
+      "total": 13,
+      "pending_blocked": 0,
+      "format_mismatch": 9,
+      "real_missing": 4,
+      "samples": {
+        "pending_blocked": [],
+        "format_mismatch": [
+          "AT+CADC",
+          "AT+CHFA",
+          "AT+CLVL",
+          "AT+CMIC",
+          "AT+CMUT",
+          "AT+CRSL",
+          "AT+CRSM",
+          "AT+CSDT",
+          "AT+VTS"
+        ],
+        "real_missing": [
+          "AT+CADTONE",
+          "AT+CATONE",
+          "AT+CLDTONE",
+          "AT+CPCMREG"
+        ]
+      }
     },
     {
-      "dataset": "dat_14",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "SIM.command -> AT.command",
+      "status": "pending_blocked",
+      "total": 10,
+      "pending_blocked": 0,
+      "format_mismatch": 10,
+      "real_missing": 0,
+      "samples": {
+        "pending_blocked": [],
+        "format_mismatch": [
+          "AT+CCID",
+          "AT+CIMI",
+          "AT+CLCK",
+          "AT+CPIN",
+          "AT+CPWD",
+          "AT+CRSM",
+          "AT+CSIM",
+          "AT+CSMINS",
+          "AT+CSPN",
+          "AT+CUSD"
+        ],
+        "real_missing": []
+      }
     },
     {
-      "dataset": "dat_15",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "Power.command -> AT.command",
+      "status": "ok",
+      "total": 0
     },
     {
-      "dataset": "dat_16",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "Cert.command -> AT.command",
+      "status": "pending_blocked",
+      "total": 9,
+      "pending_blocked": 9,
+      "format_mismatch": 0,
+      "real_missing": 0,
+      "samples": {
+        "pending_blocked": [
+          "AT+SSLCFG",
+          "AT+SSLCLOSE",
+          "AT+SSLCONF",
+          "AT+SSLOPEN",
+          "AT+SSLRECV",
+          "AT+SSLSEND",
+          "AT+SSLSETCA",
+          "AT+SSLSETCERT",
+          "AT+SSLSETKEY"
+        ],
+        "format_mismatch": [],
+        "real_missing": []
+      }
     },
     {
-      "dataset": "dat_17",
-      "total_refs": 9,
-      "resolved": 0,
-      "unresolved": 9
-    },
-    {
-      "dataset": "dat_18",
-      "total_refs": 0,
-      "resolved": 0,
-      "unresolved": 0
+      "rule": "Cert.related_commands -> AT.command",
+      "status": "ok",
+      "total": 0
     }
   ],
-  "unresolved": [
-    {
-      "dataset": "dat_17",
-      "command": "+SSLCFG",
-      "needs": "SIM800 SSL AT Command Manual"
-    },
-    {
-      "dataset": "dat_17",
-      "command": "+SSLCLOSE",
-      "needs": "SIM800 SSL AT Command Manual"
-    },
-    {
-      "dataset": "dat_17",
-      "command": "+SSLCONF",
-      "needs": "SIM800 SSL AT Command Manual"
-    },
-    {
-      "dataset": "dat_17",
-      "command": "+SSLOPEN",
-      "needs": "SIM800 SSL AT Command Manual"
-    },
-    {
-      "dataset": "dat_17",
-      "command": "+SSLRECV",
-      "needs": "SIM800 SSL AT Command Manual"
-    },
-    {
-      "dataset": "dat_17",
-      "command": "+SSLSEND",
-      "needs": "SIM800 SSL AT Command Manual"
-    },
-    {
-      "dataset": "dat_17",
-      "command": "+SSLSETCA",
-      "needs": "SIM800 SSL AT Command Manual"
-    },
-    {
-      "dataset": "dat_17",
-      "command": "+SSLSETCERT",
-      "needs": "SIM800 SSL AT Command Manual"
-    },
-    {
-      "dataset": "dat_17",
-      "command": "+SSLSETKEY",
-      "needs": "SIM800 SSL AT Command Manual"
-    }
-  ],
-  "blocked_source": {
-    "SIM800 SSL AT Command Manual": [
-      "dat_17:+SSLCFG",
-      "dat_17:+SSLCLOSE",
-      "dat_17:+SSLCONF",
-      "dat_17:+SSLOPEN",
-      "dat_17:+SSLRECV",
-      "dat_17:+SSLSEND",
-      "dat_17:+SSLSETCA",
-      "dat_17:+SSLSETCERT",
-      "dat_17:+SSLSETKEY"
+  "buckets": {
+    "pending_blocked": [
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLCFG",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      },
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLCLOSE",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      },
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLCONF",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      },
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLOPEN",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      },
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLRECV",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      },
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLSEND",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      },
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLSETCA",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      },
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLSETCERT",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      },
+      {
+        "dataset": "dat_17",
+        "ref": "AT+SSLSETKEY",
+        "target": "dat_01.command",
+        "manual_hint": "SIM800 Series SSL AT Command Manual"
+      }
+    ],
+    "format_mismatch": [
+      {
+        "dataset": "dat_02",
+        "ref": "AT+CGREG",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+CIPRXGET",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+CIPSTATUS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+CLIP",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+CNMI",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+CPIN",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+CREG",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+CUSD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+FTPGET",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+FTPPUT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+HTTPACTION",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_02",
+        "ref": "AT+HTTPREAD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CCID",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CFUN=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CFUN=1,1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CGACT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CGATT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CGATT=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CGDCONT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CIMI",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CIPCLOSE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CIPSEND",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CIPSTART",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CMGF",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CMGF=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CMGR",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CMGS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CMTE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+COPS?",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CPIN?",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CPOWD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CREG=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CREG?",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CSCLK",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CSCLK=0",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CSCLK=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_05",
+        "ref": "AT+CSTT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CFUN=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CGACT=1,<cid>",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CGATT=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CGREG?",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CIFSR",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CIICR",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CIPSTART=\"TCP\",\"host\",port",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CIPSTART=<mode>,<IP>,<port>",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CMGF=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CPIN=<pin>",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CPIN?",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CREG=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CREG?",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CSCLK=1",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CSQ",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CSTT=\"apn\"",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+CSTT=<apn>,<user name>,<password>",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+IPR",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_06",
+        "ref": "AT+IPR=<rate>",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CMEE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CMGD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CMGF",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CMGL",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CMGR",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CMGS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CMGW",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CNMI",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CPMS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CSCA",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CSCS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CSDH",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CSMP",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_09",
+        "ref": "AT+CSMS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CDNSGIP",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CGACT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CGATT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CGDCONT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CGPADDR",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CGREG",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIFSR",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIICR",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPCCFG",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPCLOSE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPMODE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPMUX",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPQSEND",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPRXGET",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPSEND",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPSHUT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPSTART",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPSTATUS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CREG",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CSQ",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CSTT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPDELE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPGET",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPGETPATH",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPLIST",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPMKD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPMODE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPPORT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPPUT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPPUTOPT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPPUTPATH",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPRMD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPTYPE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPACTION",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPDATA",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPINIT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPPARA",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPREAD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPSTATUS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPTERM",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CADC",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CHFA",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CLVL",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CMIC",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CMUT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CRSL",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CRSM",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CSDT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+VTS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CCID",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CIMI",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CLCK",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CPIN",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CPWD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CRSM",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CSIM",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CSMINS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CSPN",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_13",
+        "ref": "AT+CUSD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      }
+    ],
+    "real_missing": [
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CEREG",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CGCONTRDP",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_10",
+        "ref": "AT+CIPDDREM",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPCLOSE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPCWD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPFLST",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPOPEN",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPPASS",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPPWD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+FTPUSER",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPHEAD",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPSSL",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+HTTPURL",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLCFG",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLCLOSE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLCONF",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLOPEN",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLRECV",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLSEND",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLSETCA",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLSETCERT",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_11",
+        "ref": "AT+SSLSETKEY",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CADTONE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CATONE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CLDTONE",
+        "target": "dat_01.command",
+        "manual_hint": null
+      },
+      {
+        "dataset": "dat_12",
+        "ref": "AT+CPCMREG",
+        "target": "dat_01.command",
+        "manual_hint": null
+      }
     ]
   },
-  "note": ""
+  "counts": {
+    "pending_blocked": 9,
+    "format_mismatch": 129,
+    "real_missing": 26
+  },
+  "indexes": {
+    "dat_01.command": 340,
+    "dat_01.state_name": 0,
+    "dat_02.command": 0,
+    "dat_02.state_name": 0,
+    "dat_03.command": 0,
+    "dat_03.state_name": 0,
+    "dat_04.command": 0,
+    "dat_04.state_name": 0,
+    "dat_05.command": 0,
+    "dat_05.state_name": 19,
+    "dat_06.command": 21,
+    "dat_06.state_name": 0,
+    "dat_07.command": 0,
+    "dat_07.state_name": 0,
+    "dat_08.command": 0,
+    "dat_08.state_name": 0,
+    "dat_09.command": 14,
+    "dat_09.state_name": 0,
+    "dat_10.command": 24,
+    "dat_10.state_name": 0,
+    "dat_11.command": 38,
+    "dat_11.state_name": 0,
+    "dat_12.command": 13,
+    "dat_12.state_name": 0,
+    "dat_13.command": 10,
+    "dat_13.state_name": 0,
+    "dat_14.command": 0,
+    "dat_14.state_name": 0,
+    "dat_15.command": 0,
+    "dat_15.state_name": 0,
+    "dat_16.command": 0,
+    "dat_16.state_name": 0,
+    "dat_17.command": 9,
+    "dat_17.state_name": 0,
+    "dat_18.command": 0,
+    "dat_18.state_name": 0
+  }
 }

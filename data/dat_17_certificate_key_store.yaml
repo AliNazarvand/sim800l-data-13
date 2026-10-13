@@ -22,6 +22,13 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: &id001 []
 - id: dat_17_0002
   category: SSL
   source:
@@ -46,6 +53,13 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: *id001
 - id: dat_17_0003
   category: SSL
   source:
@@ -70,6 +84,13 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: *id001
 - id: dat_17_0004
   category: SSL
   source:
@@ -94,6 +115,13 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: *id001
 - id: dat_17_0005
   category: SSL
   source:
@@ -118,6 +146,13 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: *id001
 - id: dat_17_0006
   category: SSL
   source:
@@ -142,6 +177,13 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: *id001
 - id: dat_17_0007
   category: SSL
   source:
@@ -166,6 +208,13 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: *id001
 - id: dat_17_0008
   category: SSL
   source:
@@ -190,6 +239,13 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: *id001
 - id: dat_17_0009
   category: SSL
   source:
@@ -214,3 +270,10 @@
   response: OK
   examples: []
   coverage_estimate: high
+  tls_version: null
+  cipher_suite: null
+  cert_format: null
+  key_format: null
+  storage: null
+  limits: null
+  related_commands: *id001

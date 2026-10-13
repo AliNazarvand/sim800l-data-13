@@ -1,17 +1,10 @@
-# dat_12 — Audio
+# dat_12 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 13
+- Status: partial
+- Coverage: —
+- Coverage estimate: low
+- Source: SIM800 Series AT Command Manual V1.01
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | partial |
-| Real records | 7 |
-| Unique records | 7 |
-| Total records | 8 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | insufficient coverage or below threshold |
-
-## Notes
-Dataset partial; see Reason above and TODO.md.
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

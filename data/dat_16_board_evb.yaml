@@ -15,3 +15,8 @@
   created_at: '2026-10-10T17:30:26Z'
   updated_at: '2026-10-10T17:30:26Z'
   coverage_estimate: low
+  name: null
+  connector: null
+  pin: null
+  function: null
+  voltage: null

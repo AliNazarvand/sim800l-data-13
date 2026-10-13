@@ -1,17 +1,10 @@
-# dat_04 — Timing & Timeout
+# dat_04 Report
 
-Generated: 2026-10-13T18:11:10Z
+- Records: 99
+- Status: partial
+- Coverage: —
+- Coverage estimate: medium
+- Source: SIM800H&SIM800L Hardware Design V2.02
+- Reason: —
 
-| Field | Value |
-|-------|-------|
-| Status | complete |
-| Real records | 70 |
-| Unique records | 70 |
-| Total records | 70 |
-| Coverage percent |  |
-| Coverage estimate |  |
-| Source count |  |
-| Reason | source available; coverage/threshold met |
-
-## Notes
-Dataset complete per R12 (coverage in [95%, 100%] or threshold met).
+See `reports/COVERAGE_MATRIX.md` for cross-dataset view.

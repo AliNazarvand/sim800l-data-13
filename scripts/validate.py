@@ -1,96 +1,151 @@
-import sys, json, yaml
+#!/usr/bin/env python3
+"""Validate all SIM800L datasets against their schemas and project rules."""
+import json
+import sys
 from pathlib import Path
-import jsonschema
 
-REQUIRED = ["id","category","source","source_type","confidence","status","applicable_models"]
-STATUS_ENUM = {"complete","partial","unknown","inferred","blocked","deferred"}
-SRC_TYPE_ENUM = {"primary","secondary","external"}
+try:
+    import yaml
+except ImportError:
+    print("ERROR: PyYAML required. pip install pyyaml", file=sys.stderr)
+    sys.exit(2)
 
-def load(p):
+try:
+    from jsonschema import Draft7Validator
+    HAVE_JSONSCHEMA = True
+except ImportError:
+    HAVE_JSONSCHEMA = False
+
+DATASETS = [f"dat_{i:02d}" for i in range(1, 19)]
+VALID_STATUS = {"complete","partial","unknown","inferred","blocked","deferred"}
+VALID_SOURCE_TYPES = {"primary","secondary","external"}
+
+
+def load_yaml(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f) or []
+
+
+def find_data_file(root, ds_id):
+    for p in sorted((root / "data").glob(f"{ds_id}_*.yaml")):
+        return p
+    return None
+
+
+def validate_dataset(root, ds_id):
+    errors = []
+    warnings = []
+    data_path = find_data_file(root, ds_id)
+    if data_path is None:
+        return {"dataset": ds_id, "file": None, "records": 0,
+                "errors": [f"No data file for {ds_id}"],
+                "warnings": warnings, "schema_ok": False}
     try:
-        with open(p, encoding="utf-8") as f:
-            return yaml.safe_load(f)
+        records = load_yaml(data_path)
     except Exception as e:
-        return {"__error__": str(e)}
+        return {"dataset": ds_id, "file": data_path.name, "records": 0,
+                "errors": [f"YAML load failed: {e}"],
+                "warnings": warnings, "schema_ok": False}
+    if not isinstance(records, list):
+        return {"dataset": ds_id, "file": data_path.name, "records": 0,
+                "errors": ["Top-level YAML must be a list"],
+                "warnings": warnings, "schema_ok": False}
+
+    schema = None
+    schema_path = root / "schemas" / f"{ds_id}.schema.yaml"
+    if schema_path.exists():
+        try:
+            schema = load_yaml(schema_path)
+        except Exception as e:
+            warnings.append(f"Schema load failed: {e}")
+
+    validator = None
+    if HAVE_JSONSCHEMA and schema:
+        try:
+            Draft7Validator.check_schema(schema)
+            validator = Draft7Validator(schema)
+        except Exception as e:
+            warnings.append(f"Schema invalid: {e}")
+
+    seen_ids = set()
+    for idx, rec in enumerate(records):
+        if not isinstance(rec, dict):
+            errors.append(f"[#{idx}] not a mapping")
+            continue
+        rid = rec.get("id")
+        if not rid:
+            errors.append(f"[#{idx}] missing id")
+            continue
+        models = rec.get("applicable_models") or []
+        if "SIM800L" not in models:
+            errors.append(f"[{rid}] R1: applicable_models must include SIM800L")
+        if not isinstance(rec.get("source"), dict) or not rec["source"].get("name"):
+            errors.append(f"[{rid}] R2: missing or invalid source.name")
+        if rec.get("status") == "synthetic":
+            errors.append(f"[{rid}] R6: synthetic forbidden")
+        if rec.get("status") == "example-only":
+            errors.append(f"[{rid}] R21: example-only forbidden in data/")
+        if rec.get("status") == "in-progress":
+            errors.append(f"[{rid}] R22: in-progress forbidden in data/")
+        if rec.get("status") not in VALID_STATUS:
+            errors.append(f"[{rid}] invalid status: {rec.get('status')}")
+        st = rec.get("source_type")
+        if st not in VALID_SOURCE_TYPES:
+            errors.append(f"[{rid}] invalid source_type: {st}")
+        c = rec.get("confidence")
+        if not isinstance(c, (int, float)) or not (0.0 <= c <= 1.0):
+            errors.append(f"[{rid}] confidence out of [0,1]: {c!r}")
+        if rid in seen_ids:
+            errors.append(f"[{rid}] duplicate id")
+        seen_ids.add(rid)
+        if validator is not None:
+            for err in validator.iter_errors(rec):
+                errors.append(f"[{rid}] schema: {err.message}")
+
+    return {"dataset": ds_id, "file": data_path.name, "records": len(records),
+            "errors": errors, "warnings": warnings,
+            "schema_ok": len(errors) == 0}
+
 
 def main():
-    root = Path(sys.argv[1])
-    data_dir = root / "data"
-    schemas_dir = root / "schemas"
-    report = {"datasets": [], "errors": [], "schema_used": {}}
+    root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
+    if not root.exists():
+        print(f"ERROR: root not found: {root}", file=sys.stderr)
+        sys.exit(1)
 
-    schema_cache = {}
-    for sp in schemas_dir.glob("dat_*.schema.yaml"):
-        try:
-            schema_cache[sp.stem.replace(".schema","")] = load(sp)
-        except Exception:
-            pass
+    results = [validate_dataset(root, ds) for ds in DATASETS]
+    total_errors = sum(len(r["errors"]) for r in results)
+    total_records = sum(r["records"] for r in results)
 
-    for f in sorted(data_dir.glob("dat_*.yaml")):
-        ds = "_".join(f.stem.split("_")[:2])
-        doc = load(f)
-        errors = []
-        if isinstance(doc, dict) and "__error__" in doc:
-            errors.append(f"YAML error: {doc['__error__']}")
-            report["datasets"].append({"dataset": ds, "file": f.name, "records": 0,
-                                       "errors": len(errors), "schema_ok": False})
-            report["errors"].extend([f"{f.name}: {e}" for e in errors])
-            continue
-        records = doc if isinstance(doc, list) else ([doc] if isinstance(doc, dict) else [])
-        seen_ids = set()
-        for i, rec in enumerate(records):
-            if not isinstance(rec, dict):
-                errors.append(f"[{i}] not a mapping"); continue
-            for field in REQUIRED:
-                if field not in rec:
-                    errors.append(f"[{i}] missing: {field}")
-            rid = rec.get("id")
-            if rid in seen_ids: errors.append(f"[{i}] duplicate id: {rid}")
-            seen_ids.add(rid)
-            st = rec.get("status")
-            if st is not None and st not in STATUS_ENUM:
-                errors.append(f"[{i}] invalid status: {st}")
-            if st == "example-only":
-                errors.append(f"[{i}] example-only forbidden (R21)")
-            if st == "synthetic":
-                errors.append(f"[{i}] synthetic forbidden (R6)")
-            stype = rec.get("source_type")
-            if stype is not None and stype not in SRC_TYPE_ENUM:
-                errors.append(f"[{i}] invalid source_type: {stype}")
-            conf = rec.get("confidence")
-            if conf is not None:
-                try:
-                    cf = float(conf)
-                    if cf < 0 or cf > 1: errors.append(f"[{i}] confidence out of range")
-                    if st == "inferred" and cf > 0.5: errors.append(f"[{i}] inferred > 0.5 (R4)")
-                except (TypeError, ValueError):
-                    errors.append(f"[{i}] non-numeric confidence")
-            am = rec.get("applicable_models")
-            if not isinstance(am, list) or "SIM800L" not in am:
-                errors.append(f"[{i}] applicable_models missing SIM800L (R1)")
+    out_dir = root / "reports"
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-        schema_ok = True
-        if ds in schema_cache and isinstance(schema_cache[ds], dict):
-            report["schema_used"][f.name] = ds
-            for i, rec in enumerate(records):
-                if not isinstance(rec, dict): continue
-                try:
-                    jsonschema.validate(instance=rec, schema=schema_cache[ds])
-                except jsonschema.ValidationError as ve:
-                    errors.append(f"[{i}] schema: {str(ve.message).splitlines()[0][:160]}")
-                    schema_ok = False
-                except Exception as e:
-                    errors.append(f"[{i}] validator error: {e}")
-                    schema_ok = False
+    (out_dir / "_validation_result.json").write_text(
+        json.dumps({"results": results, "total_errors": total_errors,
+                    "total_records": total_records, "jsonschema": HAVE_JSONSCHEMA},
+                   indent=2, ensure_ascii=False),
+        encoding="utf-8")
 
-        report["datasets"].append({"dataset": ds, "file": f.name, "records": len(records),
-                                   "errors": len(errors), "schema_ok": schema_ok})
-        if errors:
-            report["errors"].extend([f"{f.name}: {e}" for e in errors[:120]])
+    lines = ["# Validation Report", "",
+             f"- Datasets: {len(results)}",
+             f"- Total records: {total_records}",
+             f"- Total errors: {total_errors}",
+             f"- jsonschema available: {HAVE_JSONSCHEMA}", ""]
+    for r in results:
+        flag = "OK" if r["schema_ok"] else "FAIL"
+        lines.append(f"## {r['dataset']} [{flag}] records={r['records']}")
+        if r["file"]: lines.append(f"File: `{r['file']}`")
+        for w in r["warnings"]: lines.append(f"- WARN: {w}")
+        if r["errors"]:
+            for e in r["errors"][:30]: lines.append(f"- ERROR: {e}")
+            if len(r["errors"]) > 30:
+                lines.append(f"- ... and {len(r['errors'])-30} more")
+        lines.append("")
+    (out_dir / "VALIDATION_REPORT.md").write_text("\n".join(lines), encoding="utf-8")
 
-    out = root / "reports" / "_validation_result.json"
-    out.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(json.dumps(report, indent=2, ensure_ascii=False))
+    print(f"[validate] datasets={len(results)} records={total_records} errors={total_errors}")
+    sys.exit(3 if total_errors > 0 else 0)
+
 
 if __name__ == "__main__":
     main()

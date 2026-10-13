@@ -1,17 +1,19 @@
-# SOURCE INVENTORY — sim800l-data
+# Source Inventory
 
-Generated: 2026-10-13T18:11:10Z
-
-| Document | Version | Status | Type | Hash |
-|----------|---------|--------|------|------|
-| SIM800 Series AT Command Manual | V1.01 | available | primary | sha256:f84e3716ba388ece2cce679aa9e07f5c1898d1e6c1f5a781d59f6144f09a398a |
-| SIM800L Hardware Design | V1.00 | available | primary | sha256:7fe4bf41ffb8af7124ad34af30f4789777d4516ec181c79eded4bec891c8542a |
-| SIM800H&SIM800L Hardware Design | V2.02 | available | primary | sha256:55a9a3f07c9afa3d862cd95a5ad5f10029805cb27b4a8f4283883783ecfbab18 |
-| SIM800 Series SSL AT Command Manual | - | missing | primary | - |
-| SIM800 Series HTTP AT Command Manual | - | missing | primary | - |
-| SIM800 Series FTP AT Command Manual | - | missing | primary | - |
-| SIM800 Series Audio AT Command Manual | - | missing | primary | - |
-| SIM800 Series Firmware Release Notes | - | missing | primary | - |
-| SIM800L EVB Schematic | - | missing | primary | - |
-| CE/FCC/RoHS/GCF/PTCRB certificates | - | missing | primary | - |
-| mcc-mnc.com | public | available | external | - |
+| Name | Version | Date | Path | Status | Type | Hash | Notes |
+|---|---|---|---|---|---|---|---|
+| SIM800L_Hardware_Design | V1.00 | 2013-08-20 | sources/originals/SIM800L_Hardware_Design_V1.00.pdf | available | primary | - | Superseded by V2.02 |
+| SIM800H&SIM800L_Hardware_Design | V2.02 | 2015-07-27 | sources/originals/SIM800H&SIM800L_Hardware_Design_V2.02.PDF | available | primary | - | Priority over V1.00 |
+| SIM800 Series AT Command Manual | V1.01 | - | sources/originals/SIM800 Series_AT Command Manual_V1.01.pdf | available | primary | - | Main AT reference |
+| SIM800 Series TCP/IP AT Command Manual | - | - | - | missing | primary | - | Needed for dat_10 extended |
+| SIM800 Series HTTP AT Command Manual | - | - | - | missing | primary | - | Needed for dat_11 HTTP |
+| SIM800 Series FTP AT Command Manual | - | - | - | missing | primary | - | Needed for dat_11 FTP |
+| SIM800 Series SSL AT Command Manual | - | - | - | missing | primary | - | Needed for dat_17, dat_11 SSL |
+| SIM800 Series Audio AT Command Manual | - | - | - | missing | primary | - | Needed for dat_12 extended |
+| SIM800 Series SIM AT Command Manual | - | - | - | missing | primary | - | Needed for dat_13 extended |
+| SIM800L Datasheet | - | - | - | missing | primary | - | Supplementary |
+| SIM800 Series Sleep Mode Application Note | - | - | - | missing | primary | - | Needed for dat_15 extended |
+| SIM800 Series URC Application Note | - | - | - | missing | primary | - | Needed for dat_02 extended |
+| SIM800 Series Firmware Release Notes | - | - | - | missing | primary | - | Needed for dat_08 (blocked) |
+| SIM800 Series Certification Documents | - | - | - | missing | primary | - | Needed for dat_18 (blocked) |
+| mcc-mnc.com | - | 2024 | https://www.mcc-mnc.com/ | available | external | - | dat_14 source |

@@ -1,0 +1,238 @@
+{
+  "basic_at_missing": [
+    {
+      "dataset": "dat_05",
+      "ref": "AT",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_06",
+      "ref": "AT",
+      "target": "dat_01.command",
+      "manual": null
+    }
+  ],
+  "unknown": [
+    {
+      "dataset": "dat_05",
+      "ref": "ATA",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_05",
+      "ref": "ATD",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_05",
+      "ref": "ATH",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_06",
+      "ref": "ATE0",
+      "target": "dat_01.command",
+      "manual": null
+    }
+  ],
+  "not_a_command": [
+    {
+      "dataset": "dat_06",
+      "ref": "(PWRKEY pulled low for >=1s)",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_06",
+      "ref": "(wait for +CFUN: 1)",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_06",
+      "ref": "(wait for +CPIN: READY)",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_06",
+      "ref": "PWRKEY pull-down (hardware)",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_06",
+      "ref": "PWRKEY_LOW",
+      "target": "dat_01.command",
+      "manual": null
+    },
+    {
+      "dataset": "dat_06",
+      "ref": "PWRKEY_RELEASE",
+      "target": "dat_01.command",
+      "manual": null
+    }
+  ],
+  "manual_owned_pending": [
+    {
+      "dataset": "dat_10",
+      "ref": "AT+CEREG",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series TCP/IP AT Command Manual"
+    },
+    {
+      "dataset": "dat_10",
+      "ref": "AT+CGCONTRDP",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series TCP/IP AT Command Manual"
+    },
+    {
+      "dataset": "dat_10",
+      "ref": "AT+CIPDDREM",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series TCP/IP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+FTPCLOSE",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series FTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+FTPCWD",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series FTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+FTPFLST",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series FTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+FTPOPEN",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series FTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+FTPPASS",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series FTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+FTPPWD",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series FTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+FTPUSER",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series FTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+HTTPHEAD",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series HTTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+HTTPSSL",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series HTTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+HTTPURL",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series HTTP AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLCFG",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLCLOSE",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLCONF",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLOPEN",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLRECV",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLSEND",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLSETCA",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLSETCERT",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_11",
+      "ref": "AT+SSLSETKEY",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series SSL AT Command Manual"
+    },
+    {
+      "dataset": "dat_12",
+      "ref": "AT+CADTONE",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series Audio AT Command Manual"
+    },
+    {
+      "dataset": "dat_12",
+      "ref": "AT+CATONE",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series Audio AT Command Manual"
+    },
+    {
+      "dataset": "dat_12",
+      "ref": "AT+CLDTONE",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series Audio AT Command Manual"
+    },
+    {
+      "dataset": "dat_12",
+      "ref": "AT+CPCMREG",
+      "target": "dat_01.command",
+      "manual": "SIM800 Series Audio AT Command Manual"
+    }
+  ]
+}
