@@ -1,6 +1,6 @@
 # Coverage Matrix
 
-| Dataset | Records | Status | Coverage | Estimate | Source | Reason |
+| Dataset | Records | Status | Coverage | Coverage Estimate | Source | Reason |
 |---|---|---|---|---|---|---|
 | dat_01 | 340 | complete | 101.5% | high | SIM800 Series AT Command Manual V1.01 | — |
 | dat_02 | 18 | partial | — | low | SIM800 Series AT Command Manual V1.01 | — |

@@ -1,10 +1,15 @@
-# dat_18 Report
+# dat_18 Report - Certification
 
-- Records: 1
-- Status: blocked
-- Coverage: —
-- Coverage estimate: low
-- Source: (source unavailable)
-- Reason: Certification documents not available in sources/
+- **Records**: 1
+- **Validation errors**: 0
+- **Status**: blocked
+- **Coverage**: —
+- **Coverage estimate**: low
+- **Source**: (source unavailable)
+- **Reason (if blocked)**: Certification documents not available in sources/
+- **Last update**: 2026-10-13T19:08:52Z
 
-See `reports/COVERAGE_MATRIX.md` for cross-dataset view.
+## Notes
+
+Auto-generated from _validation_result.json and _coverage_result.json.
+See `reports/COVERAGE_MATRIX.md` for the cross-dataset view.

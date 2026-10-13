@@ -734,3 +734,11 @@ now has:
 - Pipeline exits: cross_ref=0 classify=0 validate=0 coverage=0.
 - Total records: 1369; validation errors: 0.
 - Buckets: pending_blocked=35, format_mismatch=129, real_missing=0.
+
+## 2026-10-13T19:08:52Z — Report Regeneration (SAFE MODE)
+
+- No changes to data/ or schemas/.
+- Regenerated 18 dat_XX_REPORT.md with actual counts.
+- Wrote reports/_FINAL_STATUS.md with consolidated numbers.
+- Total records: 1369; validation errors: 0.
+- pending_blocked: 35; format_mismatch: 129; real_missing: 0.

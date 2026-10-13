@@ -1,10 +1,15 @@
-# dat_02 Report
+# dat_02 Report - URC
 
-- Records: 18
-- Status: partial
-- Coverage: —
-- Coverage estimate: low
-- Source: SIM800 Series AT Command Manual V1.01
-- Reason: —
+- **Records**: 18
+- **Validation errors**: 0
+- **Status**: partial
+- **Coverage**: —
+- **Coverage estimate**: low
+- **Source**: SIM800 Series AT Command Manual V1.01
+- **Reason (if blocked)**: —
+- **Last update**: 2026-10-13T19:08:52Z
 
-See `reports/COVERAGE_MATRIX.md` for cross-dataset view.
+## Notes
+
+Auto-generated from _validation_result.json and _coverage_result.json.
+See `reports/COVERAGE_MATRIX.md` for the cross-dataset view.

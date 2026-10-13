@@ -1,10 +1,15 @@
-# dat_06 Report
+# dat_06 Report - Init Sequence
 
-- Records: 35
-- Status: partial
-- Coverage: —
-- Coverage estimate: medium
-- Source: SIM800 Series AT Command Manual V1.01
-- Reason: —
+- **Records**: 35
+- **Validation errors**: 0
+- **Status**: partial
+- **Coverage**: —
+- **Coverage estimate**: medium
+- **Source**: SIM800 Series AT Command Manual V1.01
+- **Reason (if blocked)**: —
+- **Last update**: 2026-10-13T19:08:52Z
 
-See `reports/COVERAGE_MATRIX.md` for cross-dataset view.
+## Notes
+
+Auto-generated from _validation_result.json and _coverage_result.json.
+See `reports/COVERAGE_MATRIX.md` for the cross-dataset view.

@@ -1,10 +1,15 @@
-# dat_13 Report
+# dat_13 Report - SIM Management
 
-- Records: 10
-- Status: partial
-- Coverage: —
-- Coverage estimate: low
-- Source: SIM800 Series AT Command Manual V1.01
-- Reason: —
+- **Records**: 10
+- **Validation errors**: 0
+- **Status**: partial
+- **Coverage**: —
+- **Coverage estimate**: low
+- **Source**: SIM800 Series AT Command Manual V1.01
+- **Reason (if blocked)**: —
+- **Last update**: 2026-10-13T19:08:52Z
 
-See `reports/COVERAGE_MATRIX.md` for cross-dataset view.
+## Notes
+
+Auto-generated from _validation_result.json and _coverage_result.json.
+See `reports/COVERAGE_MATRIX.md` for the cross-dataset view.

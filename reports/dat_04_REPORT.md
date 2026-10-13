@@ -1,10 +1,15 @@
-# dat_04 Report
+# dat_04 Report - Timing & Timeout
 
-- Records: 99
-- Status: partial
-- Coverage: —
-- Coverage estimate: medium
-- Source: SIM800H&SIM800L Hardware Design V2.02
-- Reason: —
+- **Records**: 99
+- **Validation errors**: 0
+- **Status**: partial
+- **Coverage**: —
+- **Coverage estimate**: medium
+- **Source**: SIM800H&SIM800L Hardware Design V2.02
+- **Reason (if blocked)**: —
+- **Last update**: 2026-10-13T19:08:52Z
 
-See `reports/COVERAGE_MATRIX.md` for cross-dataset view.
+## Notes
+
+Auto-generated from _validation_result.json and _coverage_result.json.
+See `reports/COVERAGE_MATRIX.md` for the cross-dataset view.
