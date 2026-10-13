@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """
-Cross-reference validation with strong AT-command normalization.
-
-Classification:
-  - format_mismatch   : normalized form matches a target entry
-  - pending_blocked   : target is a manual-owned command whose manual is missing
-  - real_missing      : absent from all sources
+Cross-reference validation with classification into 3 buckets:
+  - pending_blocked : target command owned by a manual missing from sources/
+  - format_mismatch : normalized form matches a target entry
+  - real_missing    : not present in target and not manual-owned
 """
 import json
 import re
@@ -15,7 +13,7 @@ from pathlib import Path
 try:
     import yaml
 except ImportError:
-    print("ERROR: PyYAML required. pip install pyyaml", file=sys.stderr)
+    print("ERROR: PyYAML required.", file=sys.stderr)
     sys.exit(2)
 
 DATASETS = [f"dat_{i:02d}" for i in range(1, 19)]
@@ -41,13 +39,17 @@ RULES = [
      "SIM800 Series SSL AT Command Manual"),
 ]
 
-MANUAL_OWNED_PREFIXES = {
-    "SIM800 Series SSL AT Command Manual": ("+SSL",),
+# All manuals that are NOT present in sources/originals/, with their prefixes.
+MANUAL_PREFIXES = {
+    "SIM800 Series FTP AT Command Manual":      ("+FTP",),
+    "SIM800 Series HTTP AT Command Manual":     ("+HTTP",),
+    "SIM800 Series SSL AT Command Manual":      ("+SSL",),
+    "SIM800 Series Audio AT Command Manual":    ("+CADTONE", "+CATONE", "+CLDTONE", "+CPCMREG"),
+    "SIM800 Series TCP/IP AT Command Manual":   ("+CEREG", "+CGCONTRDP", "+CIPDDREM"),
 }
 
 
 def normalize_at(s):
-    """Strong canonicalization (matches analyze_missing.py)."""
     if not isinstance(s, str):
         return None
     s = s.strip().upper()
@@ -81,16 +83,34 @@ def build_index(records, field):
     return {"raw": raw, "norm": norm}
 
 
+def is_manual_owned(ref):
+    """Check if the ref starts with any manual-owned prefix."""
+    s = ref.strip().upper()
+    # strip leading AT
+    if s.startswith("AT+"):
+        s = "+" + s[3:]
+    elif s.startswith("AT"):
+        pass
+    for manual, prefixes in MANUAL_PREFIXES.items():
+        for p in prefixes:
+            if s.startswith(p.upper()):
+                return manual
+    return None
+
+
 def classify(missing_item, tgt_index, manual_hint):
     n = normalize_at(missing_item)
     if n and n in tgt_index["norm"]:
-        return "format_mismatch"
+        return "format_mismatch", None
+    # explicit manual_hint from rule
     if manual_hint:
-        for prefix in MANUAL_OWNED_PREFIXES.get(manual_hint, ()):
-            if missing_item.upper().startswith(prefix.upper()):
-                return "pending_blocked"
-        return "pending_blocked"
-    return "real_missing"
+        m = is_manual_owned(missing_item)
+        return "pending_blocked", (m or manual_hint)
+    # auto-detect manual-owned
+    m = is_manual_owned(missing_item)
+    if m:
+        return "pending_blocked", m
+    return "real_missing", None
 
 
 def main():
@@ -141,15 +161,23 @@ def main():
 
         per_class = {"pending_blocked": [], "format_mismatch": [], "real_missing": []}
         for m in sorted(missing):
-            c = classify(m, tgt_index, manual_hint)
+            c, manual = classify(m, tgt_index, manual_hint)
             per_class[c].append(m)
-            buckets[c].append({"dataset": src_ds, "ref": m,
-                               "target": f"{tgt_ds}.{tgt_field}",
-                               "manual_hint": manual_hint})
+            entry = {"dataset": src_ds, "ref": m,
+                     "target": f"{tgt_ds}.{tgt_field}"}
+            if manual:
+                entry["manual_hint"] = manual
+            buckets[c].append(entry)
+
+        status = "ok"
+        if per_class["real_missing"]:
+            status = "unresolved"
+        elif per_class["pending_blocked"] or per_class["format_mismatch"]:
+            status = "pending_blocked"
 
         findings.append({
             "rule": desc,
-            "status": "unresolved" if per_class["real_missing"] else "pending_blocked",
+            "status": status,
             "total": total,
             "pending_blocked": len(per_class["pending_blocked"]),
             "format_mismatch": len(per_class["format_mismatch"]),
@@ -185,9 +213,7 @@ def main():
         if f.get("reason"):
             lines.append(f"    - {f['reason']}")
         if "pending_blocked" in f:
-            lines.append(f"    - pending_blocked={f['pending_blocked']} "
-                         f"format_mismatch={f['format_mismatch']} "
-                         f"real_missing={f['real_missing']}")
+            lines.append(f"    - pb={f['pending_blocked']} fm={f['format_mismatch']} rm={f['real_missing']}")
             for k, samples in f["samples"].items():
                 if samples:
                     lines.append(f"        [{k}] {', '.join(samples)}")

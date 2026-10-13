@@ -84,3 +84,19 @@ dat_01 untouched (R14).
 | Q2: Keep manual-owned as pending_blocked | 26 items | Awaiting FTP/HTTP/SSL/Audio/TCP-IP manuals |
 | Q4: dat_07 remains partial | - | Pin table coverage requires manual audit |
 | Q5: Git commit | see branch | feature/complete-datasets |
+
+## 2026-10-13T19:07:51Z — True Final Closure
+
+| Decision | Reason | Rejected Alternatives |
+|---|---|---|
+| cross_ref recognizes all manual prefixes (FTP/HTTP/SSL/Audio/TCP-IP) | 26 commands were mis-bucketed as real_missing | Keep only +SSL prefix (rejected) |
+| classify_missing.py rewritten with correct AT_COMMAND_RE | Prior PowerShell -replace corrupted the file (SyntaxError) | In-place regex patch (rejected) |
+
+Result after fix:
+- pending_blocked : 35
+- format_mismatch : 129
+- real_missing    : 0
+- basic_at_missing: 0
+- manual_owned    : 0
+- not_a_command   : 0
+- unknown         : 0
