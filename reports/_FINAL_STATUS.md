@@ -2,7 +2,7 @@
 
 
 
-**Generated**: 2026-10-13T19:08:52Z
+**Generated**: 2026-10-13T19:10:14Z
 
 
 
@@ -14,33 +14,19 @@
 
 |---|---|
 
-| Total records (18 datasets) | 1369 |
+| Total records | 1369 |
 
 | Validation errors | 0 |
 
-| Cross-ref real_missing | 0 |
+| real_missing | 0 |
 
-| Cross-ref pending_blocked | 35 |
+| pending_blocked | 35 |
 
-| Cross-ref format_mismatch | 129 |
+| format_mismatch | 129 |
 
+| basic AT added (Q1) | 5 |
 
-
-## Real-missing classification
-
-
-
-| Category | Count |
-
-|---|---|
-
-| basic_at_missing | 0 |
-
-| manual_owned_pending | 0 |
-
-| not_a_command | 0 |
-
-| unknown | 0 |
+| dat_06 nulled (Q3) | 6 |
 
 
 
@@ -90,49 +76,34 @@
 
 
 
-## Documented outstanding items (not blocking)
+## Outstanding (documented)
 
 
 
-- Q2: 0 manual-owned commands stay pending_blocked
+- 35 cross-refs are pending_blocked (missing manuals).
 
-      until FTP/HTTP/SSL/Audio/TCP-IP manuals are provided.
+- dat_07 pin-table coverage audit deferred (Q4).
 
-- Q4: dat_07 pin-table coverage vs V2.02 manual needs an audit.
-
-- Blocked datasets: dat_08 (Firmware), dat_16 (EVB), dat_18 (Certification).
+- dat_08, dat_16, dat_18 blocked (sources unavailable).
 
 
 
-## Blocked datasets rationale
+## Pipeline
 
 
 
-- **dat_08** - Firmware Release Notes not available in sources/.
+- validate.py (R1-R24 + schema)
 
-- **dat_16** - Official EVB documentation not available in sources/.
+- cross_ref.py (3-bucket)
 
-- **dat_18** - Certification documents not available in sources/.
+- classify_missing.py (4-way)
 
+- coverage_report.py
 
+- consistency_check.py (R20)
 
-## Pipeline scripts
+- apply_decisions.py (Q1/Q3)
 
+- normalize_data.py
 
-
-- alidate.py - schema + business logic validation
-
-- cross_ref.py - 3-bucket cross-reference
-
-- classify_missing.py - 4-way classification of real_missing
-
-- coverage_report.py - coverage estimate per dataset
-
-- consistency_check.py - R20 cross-dataset consistency
-
-- pply_decisions.py - Q1/Q3 owner decisions
-
-- 
-ormalize_data.py - ID stabilization + blocked datasets
-
-- dedup_dat07.py - dat_07 deduplication
+- dedup_dat07.py
